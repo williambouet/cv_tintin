@@ -1,3 +1,10 @@
+:root {
+    --width-work-exp: clamp(30%, 150px, 500px);
+    --height-work-exp: clamp(20vh, 20vh, 300px);
+    --height-tintin-id : clamp(10vh, 30vh, 20vh);
+
+}
+
 .works {
     border: 1px red solid;
 
@@ -8,7 +15,7 @@
 }
 
 .work {
-    height: 100px;
+    height: var(--height-work-exp);
     border: 1px green solid;
 
     display: flex;
@@ -17,17 +24,18 @@
 
 .bubble {
     border: 1px purple solid;
-    width: 150px;
+    width: var(--width-work-exp);
 }
 
 .job {
 
-    width: 150px;
+    width: var(--width-work-exp);
     border: 1px yellow solid;
+    padding-inline: var(--spacing);
 }
 
 .tintinId {
-    height: 5%;
+    height: var(--height-tintin-id);
     aspect-ratio: var(--aspect-square);
 
     background-image: url(./img/id-tintin.webp);

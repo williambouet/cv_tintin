@@ -19,19 +19,33 @@
     <div class="work">
         <div class="job">Jounaliste</div>
         <div class="tintinId"></div>
-        <div class="bubble">bulle</div>
+        <div class="bubble"></div>
     </div>
 </div>
 
 <div class="works">
     <div class="work">
-        <div class="bubble">bulle</div>
+        <div class="bubble"></div>
         <div class="tintinId"></div>
         <div class="job">Pilote de sous-marin</div>
     </div>
 </div>
 
+<div class="works">
+    <div class="work">
+        <div class="job">Traficant de drogue</div>
+        <div class="tintinId"></div>
+        <div class="bubble"></div>
+    </div>
+</div>
 
+<div class="works">
+    <div class="work">
+        <div class="bubble"></div>
+        <div class="tintinId"></div>
+        <div class="job">Roi Maya</div>
+    </div>
+</div>
 
 <!--  ci-dessous à effacer  -->
 
