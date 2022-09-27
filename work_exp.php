@@ -17,17 +17,17 @@
 
 <div class="works">
     <div class="work">
-        <div class="job">Jounaliste</div>
+        <div class="job">Journaliste indépendant</div>
         <div class="tintinId"></div>
-        <div class="bubble"></div>
+        <div class="bubble speechR">J'ai acquis une certaine facilité à me mêler d'affaires qui ne me regarde pas...</div> </div>
     </div>
 </div>
 
 <div class="works">
     <div class="work">
-        <div class="bubble"></div>
-        <div class="tintinId"></div>
-        <div class="job">Pilote de sous-marin</div>
+            <div class="bubble speechL">Sous-marin, avion , moto, jeep, chameau, fusée...Même sans permis, je le conduis !</div>
+            <div class="tintinId"></div>
+        <div class="job">Pilote en tout genre</div>
     </div>
 </div>
 
@@ -35,13 +35,13 @@
     <div class="work">
         <div class="job">Traficant de drogue</div>
         <div class="tintinId"></div>
-        <div class="bubble"></div>
+        <div class="bubble speechR">J'ai développé mon réseau de contact professionnel jusqu'en Colombie</div>
     </div>
 </div>
 
 <div class="works">
     <div class="work">
-        <div class="bubble"></div>
+        <div class="bubble speechL">J'ai développé ma capacité managériale et mon sens de l'autorité.</div>
         <div class="tintinId"></div>
         <div class="job">Roi Maya</div>
     </div>
