@@ -11,83 +11,111 @@
 
 }
 
-.works {
-
-    display: flex;
-    flex-direction: column;
-    align-items: space-around;
-    margin-top: var(--spacing);
 
 
-}
+.vignettes {
+    width: 360px;
+    height: 100%;
 
-.work {
-    height: var(--height-work-exp);
-
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 10% repeat(8, auto) 10%;
+    gap: 16px;
 
 }
+
+
 
 
 .job {
 
-    width: var(--width-work-exp);
+    width: 100%;
+    height: 100%;
 
     font-family: 'Tintin', sans-serif;
-                                                
+    font-size: 2rem;
     font-weight: bolder;
 
-    padding-inline: 8px;
+    padding: 8px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+
     text-align: center;
+
+    border: solid black 2px;
+
+    background-color: var(--primary-color);
+}
+
+ul {
+    text-align: left;
+}
+
+li {
+
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.work {
+    height: 100%;
+    width: 100%;
+    border: solid black 2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
 .tintinId {
-    height: var(--height-tintin-id);
+    height: 10rem;
     aspect-ratio: var(--aspect-square);
 
-    background-image: url(./img/id-tintin.png);
+    background-image: url(./img/Tintin_debout.png);
     background-repeat: no-repeat;
     background-size: contain;
-    align-self: center;
+    align-self: flex-end;
     z-index: 0;
 
 }
 
-/* Creating a box with a text
-           and some stylings  */
+.reverse {
+    /*     -webkit-transform: scaleX(-1);
+ */
+    transform: scaleX(-1);
+    align-self: flex-start;
+}
+
+
+
 .bubble {
-    width: var(--width-work-exp);
+    width: 100%;
     padding-inline: 10px;
     margin: var(--spacing-x2);
-    background: var(--peau);
+    background: white;
+    border: 1px solid black;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+
     text-align: center;
-    font-size: 1rem;
-    font-family: 'roboto';
-    border-radius: 35px;
+    font-size: 1.5rem;
+    font-family: "tintin_talking";
+    border-radius: 5px;
     color: rgb(31, 28, 28);
     position: relative;
     line-height: var(--space-interline);
     z-index: 0;
 }
 
-/* Creates triangular tip on the
-           end, for our speech bubble 
-           with some styling */
-.speechL:before {
+/* .speechL:before {
     content: "";
     position: absolute;
-    border-left: 20px solid var(--peau);
+    border-left: 20px solid white;
     border-right: 20px solid transparent;
-    border-top: 20px solid var(--peau);
+    border-top: 20px solid white;
     border-bottom: 20px solid transparent;
     right: -25px;
     bottom: 20px;
@@ -99,23 +127,78 @@
     content: "";
     position: absolute;
     border-left: 20px solid transparent;
-    border-right: 20px solid var(--peau);
+    border-right: 20px solid white;
     border-top: 20px solid transparent;
-    border-bottom: 20px solid var(--peau);
+    border-bottom: 20px solid white;
     left: -25px;
     bottom: 50px;
     z-index: -1;
 }
+ */
 
-.tintin_speech {
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.border {
+    width: 100%;
+    right: 100%;
 }
 
-.reverse {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+.borderL {
+    border-left: 2px solid black;
+}
 
+.borderR {
+    border-right: 2px solid black;
+}
+
+.borderT {
+    border-top: 2px solid black;
+}
+
+.borderB {
+    border-bottom: 2px solid black;
+}
+
+.planche1 {
+    background-image: url(./img/Capture1.png);
+}
+
+.planche2 {
+    background-image: url(./img/Capture2.png);
+}
+
+.planche3 {
+    background-image: url(./img/Capture3.png);
+}
+
+.planche4 {
+    background-image: url(./img/Capture4.png);
+}
+
+.planche5 {
+    background-image: url(./img/Capture5.png);
+}
+
+.planche6 {
+    background-image: url(./img/Capture6.png);
+}
+
+
+.images_tintin {
+    display: flex;
+    width: fit-content;
+}
+
+.mushroom {
+    background-image: url(./img/Champignon.png);
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 2s ease-in-out;
+    align-self: flex-end;
+}
+
+.mushroom:hover {
+
+    transform: scale(150%);
+    transform-origin: bottom;
 }
