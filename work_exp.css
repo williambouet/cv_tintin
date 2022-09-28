@@ -1,0 +1,121 @@
+:root {
+    --width-work-exp: clamp(100px, 50%, 500px);
+    --height-work-exp: clamp(20vh, 20vh, 300px);
+    --height-tintin-id: clamp(5vh, 10vh, 20vh);
+
+    --cheveux: #e1a940;
+    --peau: #e9c198;
+    --rond-jaune: #fde386;
+    --pantalon: #9b5a58;
+    --veste: #9d7363;
+
+}
+
+.works {
+
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    margin-top: var(--spacing);
+
+
+}
+
+.work {
+    height: var(--height-work-exp);
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.job {
+
+    width: var(--width-work-exp);
+
+    font-family: 'Tintin', sans-serif;
+                                                
+    font-weight: bolder;
+
+    padding-inline: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.tintinId {
+    height: var(--height-tintin-id);
+    aspect-ratio: var(--aspect-square);
+
+    background-image: url(./img/id-tintin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+    z-index: 0;
+
+}
+
+/* Creating a box with a text
+           and some stylings  */
+.bubble {
+    width: var(--width-work-exp);
+    padding-inline: 10px;
+    margin: var(--spacing-x2);
+    background: var(--peau);
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'roboto';
+    border-radius: 35px;
+    color: rgb(31, 28, 28);
+    position: relative;
+    line-height: var(--space-interline);
+    z-index: 0;
+}
+
+/* Creates triangular tip on the
+           end, for our speech bubble 
+           with some styling */
+.speechL:before {
+    content: "";
+    position: absolute;
+    border-left: 20px solid var(--peau);
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--peau);
+    border-bottom: 20px solid transparent;
+    right: -25px;
+    bottom: 20px;
+    z-index: -1;
+
+}
+
+.speechR:before {
+    content: "";
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid var(--peau);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid var(--peau);
+    left: -25px;
+    bottom: 50px;
+    z-index: -1;
+}
+
+.tintin_speech {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.reverse {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+}
