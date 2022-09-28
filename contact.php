@@ -10,39 +10,21 @@
 </head>
 
 <body>
-    <section class="form">
-        <h2>Me contacter</h2>
-        <p>Pour toute demande me concernant, remplissez le formulaire ci-dessous!</p>
-        <div id="contact_form">
-        <form>
-            <label for="name">Votre Nom</label>
-            <input type="text" id="name" name="fullname" placeholder="Prenom Nom" required="required">
-            <label for="email">Votre mail</label>
-            <input type="text" id="email" name="email" placeholder="example@mail.com" required="required">
-            <label for="subject">Sujet du message</label>
-            <select id="subject">
-                <option value="subject">A propos de...</option>
-                <option value="Une enquête">Une enquête</option>
-                <option value="Un reportage">Un reportage</option>
-                <option value="Un travail">Un travail</option>
-                <option value="Autre chose">Autre chose</option>
-            </select>
-            <label for="message">Votre message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-            <input type="submit" value="Envoyez">
-        </form>
-    </section>
-
-    <section class="adress">
-
-
-    </section>
-     
-
-                
-
-       
-
-<script src="contact.js"></script>
+<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Contactez-moi</h2>
+				<form id="contact_form">
+				<input type="text" id="name" class="field" placeholder="Votre nom" required="required">
+				<input type="email" id="email" class="field" placeholder="Votre email" required="required">
+				<input type="text" id="sujet" class="field" placeholder="Sujet">
+				<textarea placeholder="Message" class="field" required="required"></textarea>
+				<button class="btn" value="submit">Envoyez</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="contact.js"></script>
 </body>
 </html>
