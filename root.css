@@ -1,5 +1,9 @@
 @import url('http://fonts.cdnfonts.com/css/tintin');
+@font-face {
+    font-family: 'tintin_talking';
+    src: url(./font/tintin_talking.ttf);
 
+}
 :root {
 
 
