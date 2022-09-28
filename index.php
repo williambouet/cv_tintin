@@ -11,6 +11,6 @@
     <title>CV de Tintin</title>
 </head>
 <body>
-    
+
 </body>
 </html>
