@@ -1,0 +1,50 @@
+div {
+    border: 1px dotted red;
+}
+
+.tempoNav {
+    background-color: rgb(164, 63, 63);
+    height: 3rem;
+}
+
+.tempoFoot {
+    background-color: rgb(164, 63, 63);
+    height: 3rem;
+    margin-top: 10rem;
+}
+
+
+.skillsItems {
+    width: 50px;
+    height: 50px;
+    ;
+}
+
+.softsSkillsContainer {
+    background-color: rgb(163, 151, 84);
+}
+
+.shardSkillsContainer {
+    background-color: rgb(84, 155, 163);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: blue 2 px solid;
+    margin: 3px;
+    background-color: lightcoral;
+}
+
+.skillsTitle {
+    background-color: blue;
+}
+
+.skillsItems {
+    background-color: green;
+}
+
+.skillsContainer {
+    margin: 1rem;
+}
