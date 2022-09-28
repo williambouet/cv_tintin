@@ -7,11 +7,17 @@
 
     <link rel="stylesheet" href="root.css">
     <link rel="stylesheet" href="bubble.css">
+
+
+
+
+                
     <title>CV de Tintin</title>
 </head>
 <body>
 <!--  ci-dessus à effacer  -->
-
+<link href="http://fonts.cdnfonts.com/css/tintin" rel="stylesheet">
+                
 <link rel="stylesheet" href="./work_exp.css">
 
 

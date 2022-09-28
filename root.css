@@ -1,13 +1,19 @@
+@import url('http://fonts.cdnfonts.com/css/tintin');
+
 :root {
-    --primary-color: ;
-    --secondary-color: ;
-    --secondary-color-icone: ;
-    --shadow-color: ;
-    --dark-color: ;
-    --light-color: ;
 
 
-    --font-family: ;
+    --primary-color: #b04f23; /*costume*/
+    --secondary-color: #e8f0de; /*fond vert*/
+    --secondary-color-icone: #e5c39b; /*manteau*/
+    --shadow-color: #aca29e;
+    --dark-color: #1d0d06;
+    --light-color: #f8e3d9;
+
+
+
+    --font-family: 'Tintin', sans-serif;    
+
     --font-size-s: 0.7rem;
     --font-size-m: 1rem;
     --font-size-l: 1.5rem;

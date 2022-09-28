@@ -36,6 +36,8 @@
 
     width: var(--width-work-exp);
 
+    font-family: 'Tintin', sans-serif;
+                                                
     font-weight: bolder;
 
     padding-inline: 8px;
@@ -70,10 +72,12 @@
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 1rem;
+    font-family: 'roboto';
     border-radius: 35px;
     color: rgb(31, 28, 28);
     position: relative;
+    line-height: var(--space-interline);
     z-index: 0;
 }
 
@@ -113,5 +117,7 @@
 }
 
 .reverse {
+    -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+
 }
