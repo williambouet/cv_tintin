@@ -1,15 +1,41 @@
-:root {
-    --width-work-exp: clamp(100px, 50%, 500px);
-    --height-work-exp: clamp(20vh, 20vh, 300px);
-    --height-tintin-id: clamp(5vh, 10vh, 20vh);
 
-    --cheveux: #e1a940;
-    --peau: #e9c198;
-    --rond-jaune: #fde386;
-    --pantalon: #9b5a58;
-    --veste: #9d7363;
+
+#contact_form {
+    max-width: 350px;
+    margin:auto;
+    border-radius: 5px;
+    padding: 20px;
 }
 
-body {
-    
+input[type=text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
