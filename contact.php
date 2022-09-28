@@ -14,9 +14,9 @@
         <p>Pour toute demande me concernant, remplissez le formulaire ci-dessous!</p>
 
         <div class="contact_form">
-            <form>
+            <form id="contact_form">
                 <label for="name">Votre nom</label></br>
-                <input type="text" class="input_field" name="fullname" placeholder="Entrez votre nom" required></br>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom" required="required"></br>
 
                 <label for="subject">Sujet de la demande</label></br>
                 <select class="subject"></br>
@@ -26,12 +26,12 @@
                     <option value="investigation">Une investigation</option>
                 </select></br>
                 <label for="email">Votre email</label></br>
-                <input type="email" class="input-field" name="email" placeholder="Entrez votre adresse mail" required></br>
+                <input type="email" id="email" name="email" placeholder="Entrez votre adresse mail" required="required"></br>
 
                 <label for="message">Votre message</label></br>
-                <textarea type="text" class="input-field textarea-field" placeholder="Votre message" name="message" required></textarea>
+                <textarea type="text" id="message" placeholder="Votre message" name="message" required="required"></textarea>
 
-                <button type="button" class="btn">Envoyez</button>
+                <input type="submit" value="Envoyer" />
 
             </form>
         </div>
@@ -48,6 +48,7 @@
 
 
     </section>
+    <script src="contact.js"></script>
 </body>
 
 </html>
