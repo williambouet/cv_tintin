@@ -12,11 +12,11 @@
     --secondary-color-icone: #e5c39b; /*manteau*/
     --shadow-color: #aca29e;
     --dark-color: #1d0d06;
-    --light-color: #f8e3d9;
-
-
+    --light-color: #faf1ec;
 
     --font-family: 'Tintin', sans-serif;    
+    --font-family-talking: 'tintin_talking', sans-serif;
+    --font-family-sans-serif: arial,sans-serif; /* pas plus de 2 fonts dans la page*/
 
     --font-size-s: 0.7rem;
     --font-size-m: 1rem;
@@ -24,22 +24,17 @@
     --font-size-xl: 2rem;
     --font-size-xxl: 2.5rem;
 
-    /* --height-head: 50px;
-    --height-menu: 60px;
-    --height-main-titles: 100px;
-    --width-photo: 80px;
-    --width-logo: 2rem;
-    --width-menu: 350px;
-    --width-decoration: 50px;
-    --width-cards: 95%; */
-
+    --width-vignettes-jobs: 360px;
+    --width-tintin-vignettes:70%;
+    --height-tintin-vignettes:160px;
 
     --border: 1px;
+    --border-vignettes:2px;
+
+    --aside-vignettes:10%;
 
     --radius-photo: 50%;
-
     --radius-border: 4px;
-    --shadow-border: ;
 
     --spacing: 8px;
     --spacing-x2: calc(var(--spacing) * 2);
@@ -52,6 +47,7 @@
     --border-circle: 50%;
 
     --transition-time: 0.3s;
+    --transition-time-objects:2s;
 }
 
 * {

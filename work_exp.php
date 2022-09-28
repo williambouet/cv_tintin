@@ -36,12 +36,11 @@
     <div class="border borderB borderL borderT planche3"></div>
  
     <div class="border borderR borderT borderB planche1"></div>
-    <div class="work">
-
-        <div class="bubble speechR">J'ai acquis une certaine facilité à me mêler d'affaires qui ne me regarde pas...</div> 
+    <div class="talking">
+        <div class="bubble ">J'ai acquis une certaine facilité à me mêler d'affaires qui ne me regarde pas...</div> 
         <div class="images_tintin">
-        <div class="tintinId"></div> 
-        <div class="mushroom"></div>
+            <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
+            <div class="mushroom"></div>
         </div>   
     </div>
     <div class="border borderB borderL borderT planche2"></div>
@@ -56,9 +55,9 @@
     <div class="border borderB borderL borderT planche6"></div>
 
     <div class="border borderR borderT borderB planche3"></div>
-    <div class="work">
-        <div class="bubble speechL">Sous-marin, avion , moto, jeep, chameau, fusée...Même sans permis, je le conduis !</div>
-        <div class="tintinId reverse"></div>
+    <div class="talking">
+        <div class="bubble">Sous-marin, avion , moto, jeep, chameau, fusée...Même sans permis, je le conduis !</div>
+        <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
     </div>
     <div class="border borderB borderL borderT planche4"></div>
 
@@ -72,10 +71,9 @@
     <div class="border borderB borderL borderT planche1"></div>
 
     <div class="border borderR borderT borderB planche5"></div>
-    <div class="work">
-
-        <div class="bubble speechR">J'ai développé mon réseau de contact professionnel jusqu'en Colombie</div>       
-         <div class="tintinId"></div>
+    <div class="talking">
+        <div class="bubble ">J'ai développé mon réseau de contact professionnel jusqu'en Colombie</div>       
+        <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
     </div>
     <div class="border borderB borderL borderT planche6"></div>
 
@@ -89,9 +87,9 @@
     <div class="border borderB borderL borderT planche2"></div>
 
     <div class="border borderR borderT borderB planche1"></div>
-    <div class="work">
-        <div class="bubble speechL">J'ai développé ma capacité managériale et mon sens de l'autorité.</div>
-        <div class="tintinId reverse"></div>
+    <div class="talking">
+        <div class="bubble">J'ai développé ma capacité managériale et mon sens de l'autorité.</div>
+        <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
     </div>
     <div class="border borderB borderL borderT planche4"></div>
 

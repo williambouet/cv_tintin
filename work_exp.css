@@ -1,26 +1,11 @@
-:root {
-    --width-work-exp: clamp(100px, 50%, 500px);
-    --height-work-exp: clamp(20vh, 20vh, 300px);
-    --height-tintin-id: clamp(5vh, 10vh, 20vh);
-
-    --cheveux: #e1a940;
-    --peau: #e9c198;
-    --rond-jaune: #fde386;
-    --pantalon: #9b5a58;
-    --veste: #9d7363;
-
-}
-
-
-
 .vignettes {
-    width: 360px;
+    width: var(--width-vignettes-jobs);
     height: 100%;
 
     display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 10% repeat(8, auto) 10%;
-    gap: 16px;
+    grid-template-columns: var(--aside-vignettes) 1fr var(--aside-vignettes);
+    grid-template-rows: var(--aside-vignettes) repeat(8, auto) var(--aside-vignettes);
+    gap: var(--spacing-x2);
 
 }
 
@@ -28,24 +13,23 @@
 
 
 .job {
+    background-color: var(--primary-color);
 
     width: 100%;
     height: 100%;
 
-    font-family: 'Tintin', sans-serif;
-    font-size: 2rem;
+    font-family: var(--font-family);
+    font-size: var(--font-size-xl);
     font-weight: bolder;
 
-    padding: 8px;
+    padding: var(--spacing);
+
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
 
-    border: solid black 2px;
-
-    background-color: var(--primary-color);
+    border: solid var(--dark-color) var(--border-vignettes);
 }
 
 ul {
@@ -53,88 +37,52 @@ ul {
 }
 
 li {
-
-    font-size: 1rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: var(--font-size-m);
+    font-family: var(--font-family);
 }
 
-.work {
+.talking {
     height: 100%;
     width: 100%;
-    border: solid black 2px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    border: solid var(--dark-color) var(--border-vignettes);
 }
 
 .tintinId {
-    height: 10rem;
+    height: var(--height-tintin-vignettes);
+    width:var(--width-tintin-vignettes);
     aspect-ratio: var(--aspect-square);
-
-    background-image: url(./img/Tintin_debout.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-self: flex-end;
-    z-index: 0;
-
 }
 
 .reverse {
-    /*     -webkit-transform: scaleX(-1);
- */
     transform: scaleX(-1);
-    align-self: flex-start;
 }
-
-
 
 .bubble {
     width: 100%;
-    padding-inline: 10px;
+
+    padding: var(--spacing);
     margin: var(--spacing-x2);
-    background: white;
-    border: 1px solid black;
+    background: var(--light-color);
+    border: var(--border) solid var(--dark-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     text-align: center;
-    font-size: 1.5rem;
-    font-family: "tintin_talking";
-    border-radius: 5px;
-    color: rgb(31, 28, 28);
+    font-size: var(--font-size-l);
+    font-family: var(--font-family-talking);
+    border-radius: var(--radius-border);
+    color:var(--dark-color);
     position: relative;
     line-height: var(--space-interline);
     z-index: 0;
 }
-
-/* .speechL:before {
-    content: "";
-    position: absolute;
-    border-left: 20px solid white;
-    border-right: 20px solid transparent;
-    border-top: 20px solid white;
-    border-bottom: 20px solid transparent;
-    right: -25px;
-    bottom: 20px;
-    z-index: -1;
-
-}
-
-.speechR:before {
-    content: "";
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid white;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid white;
-    left: -25px;
-    bottom: 50px;
-    z-index: -1;
-}
- */
 
 .border {
     width: 100%;
@@ -142,19 +90,19 @@ li {
 }
 
 .borderL {
-    border-left: 2px solid black;
+    border-left: var(--border-vignettes) solid var(--dark-color);
 }
 
 .borderR {
-    border-right: 2px solid black;
+    border-right: var(--border-vignettes) solid var(--dark-color);
 }
 
 .borderT {
-    border-top: 2px solid black;
+    border-top: var(--border-vignettes) solid var(--dark-color);
 }
 
 .borderB {
-    border-bottom: 2px solid black;
+    border-bottom: var(--border-vignettes) solid var(--dark-color);
 }
 
 .planche1 {
@@ -193,7 +141,7 @@ li {
     height: 60px;
     background-repeat: no-repeat;
     background-size: contain;
-    transition: transform 2s ease-in-out;
+    transition: transform var(--transition-time-objects) ease;
     align-self: flex-end;
 }
 
@@ -201,4 +149,9 @@ li {
 
     transform: scale(150%);
     transform-origin: bottom;
+}
+
+
+@media screen and (min-size:900px) {
+    
 }
