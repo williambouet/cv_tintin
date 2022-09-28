@@ -26,31 +26,34 @@
     <div ></div> 
     <div ></div>
 
-    <div class="border borderR borderT borderB"></div>
+    <div class="border borderR borderT borderB planche4"></div>
     <div class="job">Journaliste indépendant
         <ul>
             <li>depuis 1929</li>
             <li>partout dans le monde</li>
         </ul>
     </div>
-    <div class="border borderB borderL borderT"></div>
+    <div class="border borderB borderL borderT planche3"></div>
  
     <div class="border borderR borderT borderB planche1"></div>
     <div class="work">
-        <div class="tintinId"></div>
+
         <div class="bubble speechR">J'ai acquis une certaine facilité à me mêler d'affaires qui ne me regarde pas...</div> 
-    
+        <div class="images_tintin">
+        <div class="tintinId"></div> 
+        <div class="mushroom"></div>
+        </div>   
     </div>
     <div class="border borderB borderL borderT planche2"></div>
 
-    <div class="border borderR borderT borderB"></div>
+    <div class="border borderR borderT borderB planche5"></div>
     <div class="job">Pilote en tout genre
         <ul>
             <li>date</li>
             <li>lieu</li>
         </ul>
     </div>
-    <div class="border borderB borderL borderT"></div>
+    <div class="border borderB borderL borderT planche6"></div>
 
     <div class="border borderR borderT borderB planche3"></div>
     <div class="work">
@@ -59,30 +62,31 @@
     </div>
     <div class="border borderB borderL borderT planche4"></div>
 
-    <div class="border borderR borderT borderB"></div>
+    <div class="border borderR borderT borderB planche2"></div>
     <div class="job">Traficant de drogue
         <ul>
             <li>date</li>
             <li>lieu</li>
         </ul>
     </div>
-    <div class="border borderB borderL borderT"></div>
+    <div class="border borderB borderL borderT planche1"></div>
 
     <div class="border borderR borderT borderB planche5"></div>
     <div class="work">
-        <div class="tintinId"></div>
-        <div class="bubble speechR">J'ai développé mon réseau de contact professionnel jusqu'en Colombie</div>
+
+        <div class="bubble speechR">J'ai développé mon réseau de contact professionnel jusqu'en Colombie</div>       
+         <div class="tintinId"></div>
     </div>
     <div class="border borderB borderL borderT planche6"></div>
 
-    <div class="border borderR borderT borderB"></div>
+    <div class="border borderR borderT borderB planche3"></div>
     <div class="job">Roi Maya
         <ul>
             <li>date</li>
             <li>lieu</li>
         </ul>
     </div>
-    <div class="border borderB borderL borderT"></div>
+    <div class="border borderB borderL borderT planche2"></div>
 
     <div class="border borderR borderT borderB planche1"></div>
     <div class="work">
