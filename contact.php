@@ -7,10 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="root.css">
 	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="navbar.css">
 	<title>Document</title>
 </head>
 
 <body>
+	<?php include_once("navbar.php"); ?>
+
 	<div class="container">
 		<div class="contact-box">
 			<div class="left"></div>
