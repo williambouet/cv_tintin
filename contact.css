@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/tintin');
+/*@import url('http://fonts.cdnfonts.com/css/tintin');
 @font-face {
     font-family: 'tintin_talking';
     src: url(./font/tintin_talking.ttf);
@@ -52,7 +52,7 @@
     --border-circle: 50%;
 
     --transition-time: 0.3s;
-}
+}*/
 
 * {
     box-sizing: border-box;
