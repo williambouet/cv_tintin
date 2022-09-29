@@ -49,6 +49,7 @@ li {
     flex-direction: column;
     justify-content: space-between;
 
+    background-color: white;
     border: solid var(--dark-color) var(--border-vignettes);
 }
 
@@ -168,18 +169,26 @@ li {
     }
 
     .vignettes {
-        height: 290px;
+        height: 100%;
+      
     }
 }
 
 @media screen and (min-width:900px) {
 
-    
+ 
+
+    body {
+        background: url(./img/) ;
+    }
+
     .vignettes {
         grid-template-columns: var(--aside-vignettes) 1fr 1fr var(--aside-vignettes);
         grid-template-rows: var(--aside-vignettes) repeat(4, auto) ;
+        width:auto;
+        padding-inline: 10%;
 
-         width: auto;
+
     }
 
     .bubble {

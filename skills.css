@@ -55,14 +55,6 @@
     box-sizing: border-box;
 }
 
-/*
-@media screen and (min-width: 800px) {
-    body {
-        flex-direction: row;
-    }
-}
-*/
-/*
 
 body {
     display: flex;
@@ -71,16 +63,8 @@ body {
     background-color: var(--secondary-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 150%;
-}
-*/
-
-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0.2rem;
-    background-color: var(--secondary-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 150%;
+    padding-right: 0.2rem;
+    background-image: url("./img/couverture_tintin.png");
 }
 
 h1,
@@ -107,16 +91,15 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-}
-
-.skillsItems {
-    background-color: white;
+    background-color: var(--primary-color);
     border-radius: var(--radius-border);
     border: var(--dark-color) var(--border) solid;
-    padding: var(--spacing-x2);
-    margin-inline: var(--spacing-x2);
-    margin-block: var(--spacing);
+}
+
+
+
+.skillsItems:hover {
+    background-color: var(--primary-color);
 }
 
 .skillsDetails {
@@ -124,7 +107,7 @@ h3 {
 }
 
 .softsSkillsContainer {
-    background-color: white;
+    background-color: none;
 }
 
 body {
@@ -134,7 +117,7 @@ body {
     justify-content: center;
     border: blue 2 px solid;
     margin: 3px;
-    background-color: white;
+    background-color: none;
 }
 
 .skillsTitle {}
@@ -143,15 +126,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: var(--secondary-color-icone);
-    border: var(--spacing-x2) solid var(--primary-color);
+    background-color: none;
+    /*    border: solid var(--dark-color) var(--border-vignettes);*/
+    opacity: 0.95;
 }
 
 .skillsContainer {
     margin: 1rem;
+    background-color: none;
 }
 
-.skillsText {
+cd .skillsText {
     display: flex;
     display: flex;
     flex-direction: column;
@@ -173,11 +158,14 @@ body {
 @media screen and (min-width: 800px) {
     .hardAndSoftContainer {
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     .skillsContainer {
         margin: 1rem;
         height: 600px;
+        max-width: 40%;
     }
 
     .imgLogoSoft,
@@ -187,5 +175,36 @@ body {
         padding: var(--spacing);
     }
 
+    .imgLogoHard {
+        transform: rotate(30deg);
+    }
 
+    .skillsItems {
+        height: 180px;
+    }
+
+    .skillsItems:hover {
+        background-color: var(--primary-color);
+    }
+
+}
+
+.bubble {
+    width: 100%;
+    padding: var(--spacing);
+    margin: var(--spacing-x2);
+    background: var(--light-color);
+    border: var(--border) solid var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: var(--font-size-l);
+    font-family: var(--font-family-talking);
+    border-radius: var(--radius-border);
+    color: var(--dark-color);
+    position: relative;
+    line-height: var(--space-interline);
+    z-index: 0;
 }
