@@ -26,8 +26,8 @@
         <div class="border borderR borderT borderB planche4 case1"></div>
         <div class="job case2">Journaliste indépendant
             <ul>
-                <li>depuis 1929</li>
-                <li>partout dans le monde</li>
+                <li>Depuis 1929</li>
+                <li>Partout dans le monde</li>
             </ul>
         </div>
         <div class="border borderB borderL borderT planche3 case3"></div>
@@ -45,8 +45,8 @@
         <div class="border borderR borderT borderB planche5 case7"></div>
         <div class="job case8">Pilote en tout genre
             <ul>
-                <li>date</li>
-                <li>lieu</li>
+                <li>11 septembre 2001</li>
+                <li>New-York</li>
             </ul>
         </div>
         <div class="border borderB borderL borderT planche6 case9"></div>
@@ -66,8 +66,8 @@
         <div class="border borderR borderT borderB planche2 case13"></div>
         <div class="job case14">Traficant de drogue
             <ul>
-                <li>date</li>
-                <li>lieu</li>
+                <li>1993</li>
+                <li>Colombie</li>
             </ul>
         </div>
 
@@ -89,8 +89,8 @@
         <div class="job case20">Roi Maya
 
             <ul>
-                <li>date</li>
-                <li>lieu</li>
+                <li>1949</li>
+                <li>Pérou</li>
             </ul>
         </div>
         <div class="border borderB borderL borderT planche2 case21"></div>
