@@ -94,6 +94,8 @@ h3 {
     background-color: var(--primary-color);
 }
 
+
+
 .skillsItems {
     /* background-color: white;
     border-radius: var(--radius-border);
@@ -127,7 +129,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: var(--secondary-color-icone);
+    background-color: whitesmoke;
     border: solid var(--dark-color) var(--border-vignettes);
 }
 
@@ -135,7 +137,7 @@ body {
     margin: 1rem;
 }
 
-.skillsText {
+cd .skillsText {
     display: flex;
     display: flex;
     flex-direction: column;
