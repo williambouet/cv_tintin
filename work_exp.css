@@ -13,15 +13,13 @@
 
 
 .job {
-    background-color: var(--primary-color);
-
     width: 100%;
     height: 100%;
 
     font-family: var(--font-family);
     font-size: var(--font-size-xl);
     font-weight: bolder;
-    color: var(--light-color);
+    color: var(--dark-color);
 
     padding: var(--spacing);
 
@@ -31,6 +29,24 @@
     text-align: center;
 
     border: solid var(--dark-color) var(--border-vignettes);
+}
+
+
+
+.case2 {
+    background-color: #42733d;
+}
+
+.case8 {
+    background-color: #a2c8f1;
+}
+
+.case14 {
+    background-color: var(--primary-color);
+}
+
+.case20 {
+    background-color: #efd3a5;
 }
 
 ul {
@@ -61,15 +77,22 @@ li {
 
 }
 
-.reverse {
-    transform: scaleX(-1);
+.maya{
+    width:100px;
 }
+
+
+
+/* .reverse {
+    transform: scaleX(-1);
+} */
 
 .bubble {
     width: 100%;
 
     padding: var(--spacing);
     margin-left: var(--spacing-x2);
+    margin-top: var(--spacing-x2);
 
     background: var(--light-color);
     border: var(--border) solid var(--dark-color);
@@ -162,26 +185,24 @@ li {
 }
 
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:780px) {
+
+
+    .vignettes {
+        width:auto;
+    }
 
     .curious_tintin {
         display: initial;
         height: var(--width-tintin-vignettes);
     }
 
-    .vignettes {
-        height: 100%;
-      
-    }
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:1500px) {
 
  
 
-    body {
-        background: url(./img/) ;
-    }
 
     .vignettes {
         grid-template-columns: var(--aside-vignettes) repeat(4, 1fr) var(--aside-vignettes);
@@ -201,20 +222,15 @@ li {
         font-size: var(--font-size-l);
     }
 
-    .case2 {
-        background-color: #42733d;
-    }
-
-    .case8 {
-        background-color: #a2c8f1;
-    }
-
-    .case20 {
-        background-color: #efd3a5;
-    }
 
     .bubble {
         font-size: var(--font-size-xl);
+    }
+
+
+    .tintinId {
+        position: relative;
+        left:-50px;
     }
 
     .firstRow{
@@ -223,10 +239,7 @@ li {
     }
 
     .case1{
-        grid-row: 2;
-        grid-column: 5;
-
-        background-size:cover;
+   
     }
 
     .case2{
@@ -236,14 +249,12 @@ li {
 
     .case3{
         grid-row: 2;
-        grid-column: 6;
+        grid-column:5/7;
         background-size:cover;
     }
 
     .case4{
-        grid-row: 3;
-        grid-column: 1;
-        background-size:cover;
+
     }
 
     .case5{
@@ -252,7 +263,7 @@ li {
     }
     .case6{
         grid-row: 3;
-        grid-column: 2;
+        grid-column: 1/3;
         background-size:cover;
     }
     .case7{
@@ -270,9 +281,7 @@ li {
         background-size:cover;
     }
     .case10{
-        grid-row: 5;
-        grid-column: 1;
-        background-size:cover;
+  
     }
     .case11{
         grid-row: 3;
@@ -280,7 +289,7 @@ li {
     }
     .case12{
         grid-row: 5;
-        grid-column: 2;
+        grid-column: 1 / 3;
         background-size:cover;
     }
     .case13{
@@ -331,23 +340,23 @@ li {
     }
     
     .planche2 {
-        background-image: url(./img/crashAvion.png); 
+        background-image: url(./img/requinssmarin.png); 
     }
     
     .planche3 {
-        background-image: url(./img/boomerang.png);   
+        background-image: url(./img/tintinbanc.jpg);   
     }
     
     .planche4 {
-        background-image: url(./img/bagarreSupposée.png);
+        background-image: url(./img/maya.png);
     }
     
     .planche5 {
-        background-image: url(./img/arrivéPérou.png);
+        background-image: url(./img/lotus.png);
     }
     
     .planche6 {
-        background-image: url(./img/Capture6.png);
+        background-image: url(./img/cigare.png);
     }
 
 }
