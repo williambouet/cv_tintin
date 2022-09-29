@@ -3,6 +3,8 @@ body{
 	height: 100%;
 	width: 100%;
 	font-family: var(--font-family);
+	background: url("img/couverture_tintin.png") repeat;
+	background-size: cover;
 }
 
 .container{
@@ -13,20 +15,9 @@ body{
 	justify-content: center;
 	align-items: center;
 	padding: 20px 100px;
+	
 }
 
-.container:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: url("img/c") no-repeat center;
-	background-size: cover;
-	filter: blur(50px);
-	z-index: -1;
-}
 .contact-box{
 	max-width: 850px;
 	display: grid;
@@ -35,7 +26,8 @@ body{
 	align-items: center;
 	text-align: center;
 	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+	border: var(--border) solid var(--dark-color);
+	border-width: 4px;
 }
 
 .left{
@@ -84,6 +76,7 @@ h2:after{
 
 textarea{
 	min-height: 150px;
+	font-family: var(--font-family);
 }
 
 .btn{
@@ -91,6 +84,7 @@ textarea{
 	padding: 0.5rem 1rem;
 	background-color: #b04f23;
 	color: #fff;
+	font-family: var(--font-family);
 	font-size: 1.1rem;
 	border: none;
 	outline: none;
@@ -102,11 +96,15 @@ textarea{
     background-color: #e5c39b;
 }
 
-.field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
-    background-color: #fff;
+.bottom-left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
-
+.bottom-left p {
+	font-size: var(--font-size-s);
+}
 @media screen and (max-width: 880px){
 	.contact-box{
 		grid-template-columns: 1fr;
