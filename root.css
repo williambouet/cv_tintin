@@ -24,7 +24,7 @@
     --font-size-xl: 2rem;
     --font-size-xxl: 2.5rem;
 
-    --width-vignettes-jobs: 360px;
+    --width-vignettes-jobs: clamp(360px, 100%, 900px);
     --width-tintin-vignettes:70%;
     --height-tintin-vignettes:160px;
 
