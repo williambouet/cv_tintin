@@ -37,7 +37,8 @@
 </svg><br>contact@tintinetmilou.be</p>
 			</div>
 			<div class="bottom-right">
-
+			<h3>Réseaux sociaux</h3>
+			<p><a href="http://linkedin.com/in/tintin">LinkedIn.com/in/tintin</a><br><a href="http://github.com/tintin">Github.com/tintin</a><br><a href="http://twitter.com/tintin">Twitter.com/tintin</a><br><a href="http://instagram.com/tintin">Instagram.com/tintin</a></p>
 			</div>
 		</div>
 	</div>
