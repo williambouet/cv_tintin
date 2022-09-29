@@ -1,121 +1,157 @@
-:root {
-    --width-work-exp: clamp(100px, 50%, 500px);
-    --height-work-exp: clamp(20vh, 20vh, 300px);
-    --height-tintin-id: clamp(5vh, 10vh, 20vh);
+.vignettes {
+    width: var(--width-vignettes-jobs);
+    height: 100%;
 
-    --cheveux: #e1a940;
-    --peau: #e9c198;
-    --rond-jaune: #fde386;
-    --pantalon: #9b5a58;
-    --veste: #9d7363;
+    display: grid;
+    grid-template-columns: var(--aside-vignettes) 1fr var(--aside-vignettes);
+    grid-template-rows: var(--aside-vignettes) repeat(8, auto) var(--aside-vignettes);
+    gap: var(--spacing-x2);
 
 }
 
-.works {
 
-    display: flex;
-    flex-direction: column;
-    align-items: space-around;
-    margin-top: var(--spacing);
-
-
-}
-
-.work {
-    height: var(--height-work-exp);
-
-    display: flex;
-    justify-content: center;
-
-}
 
 
 .job {
+    background-color: var(--primary-color);
 
-    width: var(--width-work-exp);
+    width: 100%;
+    height: 100%;
 
-    font-family: 'Tintin', sans-serif;
-                                                
+    font-family: var(--font-family);
+    font-size: var(--font-size-xl);
     font-weight: bolder;
 
-    padding-inline: 8px;
+    padding: var(--spacing);
+
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
 
+    border: solid var(--dark-color) var(--border-vignettes);
+}
+
+ul {
+    text-align: left;
+}
+
+li {
+    font-size: var(--font-size-m);
+    font-family: var(--font-family);
+}
+
+.talking {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: solid var(--dark-color) var(--border-vignettes);
 }
 
 .tintinId {
-    height: var(--height-tintin-id);
+    height: var(--height-tintin-vignettes);
+    width:var(--width-tintin-vignettes);
     aspect-ratio: var(--aspect-square);
-
-    background-image: url(./img/id-tintin.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-self: center;
-    z-index: 0;
-
 }
 
-/* Creating a box with a text
-           and some stylings  */
+.reverse {
+    transform: scaleX(-1);
+}
+
 .bubble {
-    width: var(--width-work-exp);
-    padding-inline: 10px;
+    width: 100%;
+
+    padding: var(--spacing);
     margin: var(--spacing-x2);
-    background: var(--peau);
+    background: var(--light-color);
+    border: var(--border) solid var(--dark-color);
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+
     text-align: center;
-    font-size: 1rem;
-    font-family: 'roboto';
-    border-radius: 35px;
-    color: rgb(31, 28, 28);
+    font-size: var(--font-size-l);
+    font-family: var(--font-family-talking);
+    border-radius: var(--radius-border);
+    color:var(--dark-color);
     position: relative;
     line-height: var(--space-interline);
     z-index: 0;
 }
 
-/* Creates triangular tip on the
-           end, for our speech bubble 
-           with some styling */
-.speechL:before {
-    content: "";
-    position: absolute;
-    border-left: 20px solid var(--peau);
-    border-right: 20px solid transparent;
-    border-top: 20px solid var(--peau);
-    border-bottom: 20px solid transparent;
-    right: -25px;
-    bottom: 20px;
-    z-index: -1;
-
+.border {
+    width: 100%;
+    right: 100%;
 }
 
-.speechR:before {
-    content: "";
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid var(--peau);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid var(--peau);
-    left: -25px;
-    bottom: 50px;
-    z-index: -1;
+.borderL {
+    border-left: var(--border-vignettes) solid var(--dark-color);
 }
 
-.tintin_speech {
-    width: 300px;
+.borderR {
+    border-right: var(--border-vignettes) solid var(--dark-color);
+}
+
+.borderT {
+    border-top: var(--border-vignettes) solid var(--dark-color);
+}
+
+.borderB {
+    border-bottom: var(--border-vignettes) solid var(--dark-color);
+}
+
+.planche1 {
+    background-image: url(./img/Capture1.png);
+}
+
+.planche2 {
+    background-image: url(./img/Capture2.png);
+}
+
+.planche3 {
+    background-image: url(./img/Capture3.png);
+}
+
+.planche4 {
+    background-image: url(./img/Capture4.png);
+}
+
+.planche5 {
+    background-image: url(./img/Capture5.png);
+}
+
+.planche6 {
+    background-image: url(./img/Capture6.png);
+}
+
+
+.images_tintin {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    width: fit-content;
 }
 
-.reverse {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+.mushroom {
+    background-image: url(./img/Champignon.png);
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform var(--transition-time-objects) ease;
+    align-self: flex-end;
+}
 
+.mushroom:hover {
+
+    transform: scale(150%);
+    transform-origin: bottom;
+}
+
+
+@media screen and (min-size:900px) {
+    
 }

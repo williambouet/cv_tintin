@@ -1,0 +1,15 @@
+:root {
+    --width-work-exp: clamp(100px, 50%, 500px);
+    --height-work-exp: clamp(20vh, 20vh, 300px);
+    --height-tintin-id: clamp(5vh, 10vh, 20vh);
+
+    --cheveux: #e1a940;
+    --peau: #e9c198;
+    --rond-jaune: #fde386;
+    --pantalon: #9b5a58;
+    --veste: #9d7363;
+}
+
+body {
+    
+}
