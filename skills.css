@@ -92,17 +92,14 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
+    border-radius: var(--radius-border);
+    border: var(--dark-color) var(--border) solid;
 }
 
 
 
-.skillsItems {
-    /* background-color: white;
-    border-radius: var(--radius-border);
-    border: var(--dark-color) var(--border) solid;
-    padding: var(--spacing-x2);
-    margin-inline: var(--spacing-x2);
-    margin-block: var(--spacing);*/
+.skillsItems:hover {
+    background-color: var(--primary-color);
 }
 
 .skillsDetails {
@@ -110,7 +107,7 @@ h3 {
 }
 
 .softsSkillsContainer {
-    background-color: white;
+    background-color: none;
 }
 
 body {
@@ -120,7 +117,7 @@ body {
     justify-content: center;
     border: blue 2 px solid;
     margin: 3px;
-    background-color: white;
+    background-color: none;
 }
 
 .skillsTitle {}
@@ -129,12 +126,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: whitesmoke;
-    border: solid var(--dark-color) var(--border-vignettes);
+    background-color: none;
+    /*    border: solid var(--dark-color) var(--border-vignettes);*/
+    opacity: 0.95;
 }
 
 .skillsContainer {
     margin: 1rem;
+    background-color: none;
 }
 
 cd .skillsText {
@@ -184,6 +183,9 @@ cd .skillsText {
         height: 180px;
     }
 
+    .skillsItems:hover {
+        background-color: var(--primary-color);
+    }
 
 }
 
