@@ -17,9 +17,11 @@
     <?php include_once('navbar.php') ?>
 
     <div class="vignettes">
+
         <div class="firstRow"></div>
         <div class="firstRow"></div>
         <div class="firstRow"></div>
+
 
         <div class="border borderR borderT borderB planche4 case1"></div>
         <div class="job case2">Journaliste indépendant
@@ -52,10 +54,12 @@
         <div class="border borderR borderT borderB planche3 case10"></div>
         <div class="talking case11">
             <div class="bubble">Sous-marin, avion , moto, jeep, chameau, fusée...Même sans permis, je le conduis !</div>
+
             <div class="images_tintin">
                 <img src="./img/sousMarin.png" alt="Tintin est curieux" class="curious_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
             </div>
+
         </div>
         <div class="border borderB borderL borderT planche4 case12"></div>
 
@@ -66,7 +70,9 @@
                 <li>lieu</li>
             </ul>
         </div>
+
         <div class="border borderB borderL borderT planche1 case15"></div>
+
 
         <div class="border borderR borderT borderB planche5 case16"></div>
         <div class="talking case17">
@@ -79,7 +85,9 @@
         <div class="border borderB borderL borderT planche6 case18"></div>
 
         <div class="border borderR borderT borderB planche3 case19"></div>
+
         <div class="job case20">Roi Maya
+
             <ul>
                 <li>date</li>
                 <li>lieu</li>
@@ -90,11 +98,13 @@
         <div class="border borderR borderT borderB planche1 case22"></div>
         <div class="talking case23">
             <div class="bubble">J'ai développé ma capacité managériale et mon sens de l'autorité.</div>
+
             <div class="images_tintin">
                 <img src="./img/logo_cigares.png" alt="Tintin est curieux" class="curious_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
             </div>
      </div>
+
         <div class="border borderB borderL borderT planche4 case24"></div>
 
 
