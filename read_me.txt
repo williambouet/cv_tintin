@@ -27,14 +27,8 @@ Corrections/Améliorations :
 > Expériences pro :
  - Vignettes : fermer les bordures des étiquettes intérieures (3 concernées en desktop)
  - supprimer les 4 traits qui ne servent à rien en bas
- - ajuster les médias quéries (déclencher le desktop selon les images)
- - Uniformiser les couleurs des titres
  - Faire la pointe de bulle avec :before
- - vérifier les alt
- - si possible faire des anims sur les objects
-    (requin fait des AR)
-    (statuette comme si elle marchait)
-    (dupontd faire apparaitre la bulle, et je dirais même plus)
+
 
 > Accueil : 
  - Diminuer la taille de la font
@@ -43,3 +37,6 @@ Corrections/Améliorations :
 
 > Formation :
  - Changer la disposition, les couleurs et/ou les images
+
+> Contact :
+ - En mode mobil pb avec navbar et affichage
