@@ -1,67 +1,10 @@
-/*@import url('http://fonts.cdnfonts.com/css/tintin');
-@font-face {
-    font-family: 'tintin_talking';
-    src: url(./font/tintin_talking.ttf);
-
-}
-:root {
-
-
-    --primary-color: #b04f23; /*costume*/
-    --secondary-color: #e8f0de; /*fond vert*/
-    --secondary-color-icone: #e5c39b; /*manteau*/
-    --shadow-color: #aca29e;
-    --dark-color: #1d0d06;
-    --light-color: #f8e3d9;
-
-
-
-    --font-family: 'Tintin', sans-serif;    
-
-    --font-size-s: 0.7rem;
-    --font-size-m: 1rem;
-    --font-size-l: 1.5rem;
-    --font-size-xl: 2rem;
-    --font-size-xxl: 2.5rem;
-
-    /* --height-head: 50px;
-    --height-menu: 60px;
-    --height-main-titles: 100px;
-    --width-photo: 80px;
-    --width-logo: 2rem;
-    --width-menu: 350px;
-    --width-decoration: 50px;
-    --width-cards: 95%; */
-
-
-    --border: 1px;
-
-    --radius-photo: 50%;
-
-    --radius-border: 4px;
-    --shadow-border: ;
-
-    --spacing: 8px;
-    --spacing-x2: calc(var(--spacing) * 2);
-    --spacing-x3: calc(var(--spacing) * 3);
-    --spacing-x4: calc(var(--spacing) * 4);
-    --space-interline: 1.5rem;
-
-    --aspect-square: 1;
-    --aspect-rectangle: 2;
-    --border-circle: 50%;
-
-    --transition-time: 0.3s;
-}*/
-
-* {
-    box-sizing: border-box;
-	font-family: var(tintin_ );
-}
 
 body{
 	height: 100%;
 	width: 100%;
+	font-family: var(--font-family);
+	background: url("img/couverture_tintin.png") repeat;
+	background-size: cover;
 }
 
 .container{
@@ -72,20 +15,9 @@ body{
 	justify-content: center;
 	align-items: center;
 	padding: 20px 100px;
+	
 }
 
-.container:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: url("img/c") no-repeat center;
-	background-size: cover;
-	filter: blur(50px);
-	z-index: -1;
-}
 .contact-box{
 	max-width: 850px;
 	display: grid;
@@ -94,12 +26,13 @@ body{
 	align-items: center;
 	text-align: center;
 	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+	border: var(--border) solid var(--dark-color);
+	border-width: 4px;
 }
 
 .left{
 	background: url("img/tintin_et_milou.png") no-repeat center;
-	background-size:contain;
+	background-size: contain;
 	height: 100%;
 }
 
@@ -122,7 +55,7 @@ h2:after{
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: #2ecc71;
+    background-color: #b04f23;
 }
 
 .field{
@@ -131,24 +64,27 @@ h2:after{
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.6);
 	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	margin-bottom: 22px;
 	transition: .3s;
+	font-family: var(--font-family);
 }
 
 .field:hover{
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: #faf1ec;
 }
 
 textarea{
 	min-height: 150px;
+	font-family: var(--font-family);
 }
 
 .btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
+	background-color: #b04f23;
 	color: #fff;
+	font-family: var(--font-family);
 	font-size: 1.1rem;
 	border: none;
 	outline: none;
@@ -157,14 +93,37 @@ textarea{
 }
 
 .btn:hover{
-    background-color: #27ae60;
+    background-color: #e5c39b;
 }
 
-.field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
-    background-color: #fff;
+.bottom-left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.bottom-left p {
+	font-size: var(--font-size-s);
 }
 
+.bottom-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	word-spacing: normal;
+}
+.bottom-right p {
+	font-size: var(--font-size-s);
+}
+.bottom-right a {
+	text-decoration: none;
+	color: var(--dark-color);
+	
+}
+a:hover {
+	background-color: #e5c39b;
+}
 @media screen and (max-width: 880px){
 	.contact-box{
 		grid-template-columns: 1fr;
