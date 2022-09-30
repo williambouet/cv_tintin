@@ -45,7 +45,7 @@
         <div class="border borderR borderT borderB planche5 case7"></div>
         <div class="job case8">Pilote en tout genre
             <ul>
-                <li>11 septembre 2001</li>
+                <li>2001</li>
                 <li>New-York</li>
             </ul>
         </div>
