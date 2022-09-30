@@ -105,6 +105,27 @@ textarea{
 .bottom-left p {
 	font-size: var(--font-size-s);
 }
+
+
+.bottom-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	word-spacing: normal;
+}
+.bottom-right p {
+	font-size: var(--font-size-s);
+}
+.bottom-right a {
+	text-decoration: none;
+	color: var(--dark-color);
+	
+}
+a:hover {
+	background-color: #e5c39b;
+}
+
 @media screen and (max-width: 880px){
 	.contact-box{
 		grid-template-columns: 1fr;

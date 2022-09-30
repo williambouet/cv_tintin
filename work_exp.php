@@ -37,7 +37,7 @@
             <div class="bubble ">J'ai acquis une certaine facilité à me mêler d'affaires qui ne me regarde pas...</div>
             <div class="images_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
-                <img src="./img/dupont.jpeg" alt="Tintin est curieux" class="curious_tintin">
+                <img src="" alt=" " class="curious_tintin">
             </div>
         </div>
         <div class="border borderB borderL borderT planche2 case6"></div>
@@ -56,9 +56,9 @@
             <div class="bubble">Sous-marin, avion , moto, jeep, chameau, fusée...Même sans permis, je le conduis !</div>
 
             <div class="images_tintin">
-                <img src="./img/sousMarin.png" alt="Tintin est curieux" class="curious_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
-            </div>
+                <img src="" alt=" " class="curious_tintin">
+             </div>
 
         </div>
         <div class="border borderB borderL borderT planche4 case12"></div>
@@ -79,7 +79,7 @@
             <div class="bubble ">J'ai développé mon réseau de contact professionnel jusqu'en Colombie</div>
             <div class="images_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
-                <img src="./img/Champignon.png" alt="Un champignon rouge et blanc" class="mushroom">
+                <img src="" alt=" " class="mushroom">
             </div>
         </div>
         <div class="border borderB borderL borderT planche6 case18"></div>
@@ -100,8 +100,8 @@
             <div class="bubble">J'ai développé ma capacité managériale et mon sens de l'autorité.</div>
 
             <div class="images_tintin">
-                <img src="./img/logo_cigares.png" alt="Tintin est curieux" class="curious_tintin">
-                <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
+                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
+                 <img src="" alt=" " class="curious_tintin maya">
             </div>
      </div>
 
