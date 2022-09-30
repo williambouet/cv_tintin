@@ -5,8 +5,8 @@
     
             <a href="index.php">Acceuil</a>
             <a href="education.php">Formation</a>
-            <a href="skills.php">Skills</a>
             <a href="work_exp.php">Experience professionelle</a>  
+            <a href="skills.php">Skills</a>
             <a href="contact.php">Contact</a>
         </div>
         <a class="burger" href="#links">
