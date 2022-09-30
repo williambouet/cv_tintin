@@ -22,11 +22,10 @@ Corrections/Améliorations :
  - Border : à passer en angle droit
  - Logo : à choisir ou disparaître
  - Ajuster la média quéries (pour passer en menu burger avant le saut de ligne de Exp.Pro)
- - inverser skills avec Exp.Pro
+ - inverser skills avec Exp.pro
+ - Passer .links en z-index=-1;
 
 > Expériences pro :
- - Vignettes : fermer les bordures des étiquettes intérieures (3 concernées en desktop)
- - supprimer les 4 traits qui ne servent à rien en bas
  - Faire la pointe de bulle avec :before
 
 
@@ -36,7 +35,6 @@ Corrections/Améliorations :
  -
 
 > Formation :
- - Changer la disposition, les couleurs et/ou les images
 
 > Contact :
- - En mode mobil pb avec navbar et affichage
+
