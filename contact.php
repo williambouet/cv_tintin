@@ -23,7 +23,7 @@
 					<input type="text" id="name" class="field" placeholder="Votre nom" required="required">
 					<input type="email" id="email" class="field" placeholder="Votre email" required="required">
 					<input type="text" id="sujet" class="field" placeholder="Sujet" required="required">
-					<textarea placeholder="Message" class="field" required="required"></textarea>
+					<textarea placeholder="Message" id="message" class="field" required="required"></textarea>
 					<button class="btn" value="submit">Envoyez</button>
 				</form>
 			</div>

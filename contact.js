@@ -7,5 +7,6 @@ document
     alert(message);
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
+    document.getElementById("sujet").value = "";
     document.getElementById("message").value = "";
 });
