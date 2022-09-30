@@ -21,16 +21,6 @@
     --font-size-xl: 2rem;
     --font-size-xxl: 2.5rem;
 
-    /* --height-head: 50px;
-    --height-menu: 60px;
-    --height-main-titles: 100px;
-    --width-photo: 80px;
-    --width-logo: 2rem;
-    --width-menu: 350px;
-    --width-decoration: 50px;
-    --width-cards: 95%; */
-
-
     --border: 1px;
 
     --radius-photo: 50%;
@@ -57,9 +47,11 @@
 
 
 body {
+    padding: 0px;
     display: flex;
     flex-direction: column;
     margin: 0.2rem;
+    margin-top: 0px;
     background-color: var(--secondary-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 150%;
@@ -83,7 +75,7 @@ h3 {
 
 .tempoFoot {
     background-color: var(--primary-color);
-    height: 3rem;
+    height: 0rem;
     margin-top: 10rem;
 }
 
@@ -91,15 +83,23 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: #fff;
     border-radius: var(--radius-border);
-    border: var(--dark-color) var(--border) solid;
+    border: 3px solid var(--dark-color);
+
+}
+
+.skillsItems {
+    opacity: 1;
+    background-color: #fff;
 }
 
 
 
 .skillsItems:hover {
-    background-color: var(--primary-color);
+    opacity: 1;
+    border: 4px solid var(--dark-color);
+    box-shadow: 6px 2px 2px black;
 }
 
 .skillsDetails {
@@ -117,6 +117,8 @@ body {
     justify-content: center;
     border: blue 2 px solid;
     margin: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     background-color: none;
 }
 
@@ -128,7 +130,6 @@ body {
     gap: 1rem;
     background-color: none;
     /*    border: solid var(--dark-color) var(--border-vignettes);*/
-    opacity: 0.95;
 }
 
 .skillsContainer {
@@ -183,18 +184,14 @@ cd .skillsText {
         height: 180px;
     }
 
-    .skillsItems:hover {
-        background-color: var(--primary-color);
-    }
-
 }
 
 .bubble {
     width: 100%;
     padding: var(--spacing);
-    margin: var(--spacing-x2);
-    background: var(--light-color);
-    border: var(--border) solid var(--dark-color);
+    margin-block: var(--spacing-x2);
+    background: #fff;
+    border: 3px solid var(--dark-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
