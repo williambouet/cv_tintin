@@ -76,7 +76,7 @@ h2:after{
 
 textarea{
 	min-height: 150px;
-	font-family: var(--font-family);
+	font-family: var(--font-family-sans-serif);
 }
 
 .btn{
@@ -113,6 +113,7 @@ textarea{
 	justify-content: center;
 	flex-direction: column;
 	word-spacing: normal;
+    line-height: var(--space-interline);
 }
 .bottom-right p {
 	font-size: var(--font-size-s);
