@@ -18,15 +18,17 @@ body {
 }
 
 header{
+    margin-block: var(--spacing-x4);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: var(--font-family);
     text-align: center;
-    background-color: #8f9985;
+    background-color: var(--dark-color);
     max-width: 800px;
     border-left: #fc9f0d solid 16px;
+    color:var(--light-color);
 }
 
 h1 {
