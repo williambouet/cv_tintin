@@ -70,8 +70,9 @@ nav {
     height: 60px;
     padding-inline: var(--spacing-x3);
     font-family: var(--font-family);
-    border-radius: var(--radius-border);
-}
+
+/*     border-radius: var(--radius-border);
+ */}
 
 nav a {
     color: var(--light-color);
@@ -91,11 +92,11 @@ nav a:hover {
 .links {
     display: flex;
     gap: var(--spacing-x4);
-
+    z-index:2;
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     .links {
         display: none;
     }
