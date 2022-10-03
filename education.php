@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="root.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="./navbar.css">
     <link href="http://fonts.cdnfonts.com/css/tintin" rel="stylesheet">
     <link rel="stylesheet" href="./education.css">
     <title>CV de Tintin</title>
@@ -53,7 +53,7 @@
 
         <div class="border borderR borderT borderB planche3 case10"></div>
         <div class="talking case11">
-            <div class="bubble">J'ai voyagé à travers le monde et appris auprès d'un marin au langage fleurie, à l'haleine chargée, mais par chance son portefeuille le devint également.</div>
+            <div class="bubble">J'ai voyagé à travers le monde et appris auprès d'un marin au langage fleurie et l'haleine chargée.</div>
 
             <div class="images_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
@@ -109,7 +109,7 @@
 
 
     </div>
-    <!--  ci-dessous à effacer  -->
+
 
 </body>
 
