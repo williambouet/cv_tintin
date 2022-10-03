@@ -29,7 +29,7 @@
 }
 
 .case2 {
-    background-color: var(--case-color-1);
+    background-color: var(--case-color-2);
 }
 
 .case8 {
@@ -79,16 +79,20 @@ li {
 .bubble {
     width: 100%;
 
-    padding-top: var(--spacing-x2);
-    padding-bottom: var(--spacing-x4);
-    margin-left: var(--spacing-x2);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing-x2);
+    padding-inline: var(--spacing-x2);
+    margin-inline: var(--spacing-x2);
     margin-top: var(--spacing-x2);
+    display: flex;
+    align-content: center;
+    justify-content: center;
 
     background: var(--light-color);
     border: var(--border) solid var(--dark-color);
 
     text-align: center;
-    font-size: clamp(1.2rem, 50%, var(--font-size-l));
+    font-size: 1.1rem;
     font-family: var(--font-family-talking);
     border-radius: var(--radius-border);
     color: var(--dark-color);
@@ -229,6 +233,9 @@ li {
 
     .bubble {
         font-size: var(--font-size-xl);
+        padding-top: var(--spacing-x4);
+        padding-inline: var(--spacing-x2);
+
     }
 
     .tintinId {
