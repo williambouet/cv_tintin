@@ -6,11 +6,7 @@
     grid-template-columns: var(--aside-vignettes) 1fr var(--aside-vignettes);
     grid-template-rows: var(--aside-vignettes) repeat(8, auto) var(--aside-vignettes);
     gap: var(--spacing-x2);
-
 }
-
-
-
 
 .job {
     width: 100%;
@@ -31,10 +27,8 @@
     border: solid var(--dark-color) var(--border-vignettes);
 }
 
-
-
 .case2 {
-    background-color:  #efd3a5;
+    background-color: var(--case-color-3);
 }
 
 .case8 {
@@ -42,11 +36,11 @@
 }
 
 .case14 {
-    background-color: #a2c8f1;
+    background-color:var(--case-color-2);
 }
 
 .case20 {
-    background-color:#42733d;
+    background-color:var(--case-color-1);
 }
 
 ul {
@@ -74,18 +68,11 @@ li {
     height: var(--height-tintin-vignettes);
     width: auto;
     aspect-ratio: var(--aspect-square);
-
 }
 
 .maya{
-    width:100px;
+    width:var(--width-cartoon );
 }
-
-
-
-/* .reverse {
-    transform: scaleX(-1);
-} */
 
 .bubble {
     width: 100%;
@@ -108,7 +95,6 @@ li {
     color: var(--dark-color);
 
     line-height: var(--space-interline);
- 
 }
 
 .border {
@@ -156,7 +142,6 @@ li {
     background-image: url(./img/dupontEtdupond.png);
 }
 
-
 .images_tintin {
     max-height:var(--height-tintin-vignettes);
     display: flex;
@@ -164,7 +149,7 @@ li {
     align-items: flex-end;
     }
 
-.mushroom {
+/* .mushroom {
     align-self: flex-end;
     width: 60px;
     height: 60px;
@@ -176,18 +161,15 @@ li {
 
 .mushroom:hover {
     transform: scale(300%);
-}
+} */
 
 .curious_tintin {
     display: none;
     aspect-ratio: var(--aspect-rectangle);
-
 }
 
 
 @media screen and (min-width:780px) {
-
-
     .vignettes {
         width:auto;
     }
@@ -230,12 +212,11 @@ li {
 
     .tintinId {
         position: relative;
-        left:-50px;
+        left:var(--offset-tintin);
     }
 
     .firstRow{
         display: none;
-
     }
 
     .case1{
