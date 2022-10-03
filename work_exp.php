@@ -25,16 +25,16 @@
 
         <div class="border borderR borderT borderB planche4 case1"></div>
         <div class="job case2">Journaliste indépendant
-            <ul>
-                <li>Depuis 1929</li>
-                <li>Partout dans le monde</li>
-            </ul>
+            <div>
+                <p>1929</p>
+                <p>Belgique</p>
+            </div>
         </div>
         <div class="border borderB borderL borderT planche3 case3"></div>
 
         <div class="border borderR borderT borderB planche1 case4"></div>
         <div class="talking case5">
-            <div class="bubble ">J'ai acquis une certaine facilité à me mêler d'affaires qui ne me regarde pas...</div>
+            <div class="bubble ">J'ai acquis une certaine facipté à me mêler d'affaires qui ne me regarde pas...</div>
             <div class="images_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
                 <img src="" alt=" " class="curious_tintin">
@@ -44,10 +44,10 @@
 
         <div class="border borderR borderT borderB planche5 case7"></div>
         <div class="job case8">Pilote en tout genre
-            <ul>
-                <li>2001</li>
-                <li>New-York</li>
-            </ul>
+            <div>
+                <p>2001</p>
+                <p>New-York</p>
+            </div>
         </div>
         <div class="border borderB borderL borderT planche6 case9"></div>
 
@@ -65,10 +65,10 @@
 
         <div class="border borderR borderT borderB planche2 case13"></div>
         <div class="job case14">Traficant de drogue
-            <ul>
-                <li>1993</li>
-                <li>Colombie</li>
-            </ul>
+            <div>
+                <p>1993</p>
+                <p>Colombie</p>
+            </div>
         </div>
 
         <div class="border borderB borderL borderT planche1 case15"></div>
@@ -88,10 +88,10 @@
 
         <div class="job case20">Roi Maya
 
-            <ul>
-                <li>1949</li>
-                <li>Pérou</li>
-            </ul>
+            <div>
+                <p>1949</p>
+                <p>Pérou</p>
+            </div>
         </div>
         <div class="border borderB borderL borderT planche2 case21"></div>
 

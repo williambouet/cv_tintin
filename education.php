@@ -25,10 +25,10 @@
 
         <div class="border borderR borderT borderB planche4 case1"></div>
         <div class="job case2">Formation auprès du Professeur Tournesol
-            <ul>
-                <li>1941</li>
-                <li>France</li>
-            </ul>
+            <div>
+                <p>1941</p>
+                <p>France</p>
+            </div>
         </div>
         <div class="border borderB borderL borderT planche3 case3"></div>
 
@@ -44,10 +44,10 @@
 
         <div class="border borderR borderT borderB planche5 case7"></div>
         <div class="job case8">Années sabbatiques
-            <ul>
-                <li>1941</li>
-                <li>Afrique</li>
-            </ul>
+            <div>
+                <p>1941</p>
+                <p>Afrique</p>
+            </div>
         </div>
         <div class="border borderB borderL borderT planche6 case9"></div>
 
@@ -58,17 +58,17 @@
             <div class="images_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
                 <img src="" alt=" " class="curious_tintin">
-             </div>
+            </div>
 
         </div>
         <div class="border borderB borderL borderT planche4 case12"></div>
 
         <div class="border borderR borderT borderB planche2 case13"></div>
         <div class="job case14">Stage de découverte d'entreprises
-            <ul>
-                <li>1932</li>
-                <li>France</li>
-            </ul>
+            <div>
+                <p>1932</p>
+                <p>France</p>
+            </div>
         </div>
 
         <div class="border borderB borderL borderT planche1 case15"></div>
@@ -88,22 +88,22 @@
 
         <div class="job case20">Ecole de la vie
 
-            <ul>
-                <li>1929</li>
-                <li>Belgique</li>
-            </ul>
+            <div>
+                <p>1929</p>
+                <p>Belgique</p>
+            </div>
         </div>
         <div class="border borderB borderL borderT planche2 case21"></div>
 
         <div class="border borderR borderT borderB planche1 case22"></div>
         <div class="talking case23">
-            <div class="bubble">J'ai énormément appris après mon voyage en union-soviétique. </br> J'ai donc voulu m'essayer à d'autres activités...</div>
+            <div class="bubble">J'ai énormément appris après mon voyage en union-soviétique. </br> J'ai donc vopu m'essayer à d'autres activités...</div>
 
             <div class="images_tintin">
-                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
-                 <img src="" alt=" " class="curious_tintin maya">
+                <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
+                <img src="" alt=" " class="curious_tintin maya">
             </div>
-     </div>
+        </div>
 
         <div class="border borderB borderL borderT planche4 case24"></div>
 

@@ -13,7 +13,7 @@
     height: 100%;
 
     font-family: var(--font-family);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
     font-weight: bolder;
 
     color: var(--dark-color);
@@ -44,13 +44,23 @@
     background-color: var(--case-color-3);
 }
 
-ul {
-    text-align: left;
-}
-
-li {
+.job div {
     font-size: var(--font-size-m);
     font-family: var(--font-family);
+    list-style: none;
+    margin:0;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    width:50%;
+}
+
+.job div p:nth-child(1)::before{
+    content:"🗓️    ";
+}
+
+.job div p:nth-child(2)::before{
+    content: "🗺️   ";
 }
 
 .talking {
@@ -214,7 +224,8 @@ li {
         font-size: var(--font-size-xxl);
     }
 
-    li {
+    .job div {
+        padding-top: var(--spacing-x3);
         font-size: var(--font-size-l);
     }
 
