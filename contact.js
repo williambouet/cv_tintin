@@ -1,4 +1,4 @@
-const message = "Le message a été envoyé! A bientôt! ";
+/* const message = "Le message a été envoyé! A bientôt! ";
 
 document 
 .getElementById("contact_form")
@@ -10,3 +10,4 @@ document
     document.getElementById("sujet").value = "";
     document.getElementById("message").value = "";
 });
+ */
