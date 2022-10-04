@@ -46,7 +46,19 @@ h2 {
 	font-family: var(--font-family);
 }
 
-h2:after {
+label {
+	font-family: var(--font-family-sans-serif);
+	
+}
+
+ul li {
+	list-style: none;
+}
+.error {
+	font-family: var(--font-family-sans-serif);
+	float: ;
+}
+/* h2:after {
 	content: '';
 	position: absolute;
 	left: 50%;
@@ -56,7 +68,7 @@ h2:after {
 	width: 50px;
 	border-radius: 2px;
 	background-color: #b04f23;
-}
+} */
 
 .field {
 	width: 100%;
