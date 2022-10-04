@@ -1,7 +1,7 @@
 body {
 	height: 100%;
 	width: 100%;
-	/* font-family: var(--font-family); */
+	--font-family-sans-serif: arial,sans-serif;
 	background: url("img/couverture_tintin.png") repeat;
 	background-size: cover;
 }
@@ -16,8 +16,8 @@ body {
 	padding: 20px 10%;
 	z-index: -1;
 }
-
-.contact-box {
+ 
+.message-box {
 	max-width: 850px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -27,6 +27,8 @@ body {
 	background-color: #fff;
 	border: var(--border) solid var(--dark-color);
 	border-width: 4px;
+	height: 100%;
+	font-family: var(--font-family-sans-serif);
 }
 
 .left {
@@ -38,63 +40,23 @@ body {
 .right {
 	padding: 25px 40px;
 }
-
-h2 {
-	position: relative;
-	padding: 0 0 10px;
-	margin-bottom: 10px;
-	font-family: var(--font-family);
+.right h2 {
+font-family: var(--font-family);
 }
 
-h2:after {
-	content: '';
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	transform: translateX(-50%);
-	height: 4px;
-	width: 50px;
-	border-radius: 2px;
-	background-color: #b04f23;
+.right p {
+	font-family: var(--font-family-sans-serif);
 }
 
-.field {
+.message p {
 	width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0);
-	outline: none;
 	background-color: rgba(230, 230, 230, 0.6);
 	padding: 0.5rem 1rem;
 	font-size: 1rem;
 	margin-bottom: 22px;
-	transition: .5s;
 	font-family: var(--font-family-sans-serif);
-
-}
-
-.field:hover {
-	background-color: #faf1ec;
-}
-
-textarea {
 	min-height: 150px;
-	font-family: var(--font-family-sans-serif);
-}
-
-.btn {
-	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: #b04f23;
-	color: #fff;
-	font-family: var(--font-family);
-	font-size: 1.1rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	transition: .3s;
-}
-
-.btn:hover {
-	background-color: #e5c39b;
 }
 
 .bottom-left {
@@ -111,7 +73,7 @@ textarea {
 }
 
 .bottom-left h4 {
-	font-family: var(--font-family-sans-serif);
+	font-family: var(--arial-sans-serif);
 	font-weight: normal;
 	margin: 0;
 }
