@@ -46,9 +46,6 @@
             <div class="border borderB borderL borderT <?php echo $work['class_border3']; ?>"></div>
 
         <?php } ?>
-
-
-
     </div>
 
 

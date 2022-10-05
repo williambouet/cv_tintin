@@ -1,3 +1,8 @@
+.firstRow {
+    display: none;
+
+}
+
 .vignettes {
     width: var(--width-vignettes-jobs);
     height: 100%;
@@ -6,6 +11,7 @@
     grid-template-columns: var(--aside-vignettes) 1fr var(--aside-vignettes);
     grid-template-rows: var(--aside-vignettes) repeat(8, auto) var(--aside-vignettes);
     gap: var(--spacing-x2);
+    margin-top: var(--spacing-x2);
 }
 
 .job {
@@ -184,10 +190,10 @@
 
     .curious_tintin {
         display: initial;
-  
+
     }
 
-   }
+}
 
 @media screen and (min-width:1500px) {
 
