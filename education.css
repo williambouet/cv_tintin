@@ -1,3 +1,8 @@
+body{
+    background-color: var(--background-color);
+}
+
+
 .page_title{
     font-family: var(--font-family);
     margin-top: var(--spacing-x4) ;

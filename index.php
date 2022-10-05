@@ -20,9 +20,10 @@
         <header>
 
             <img src="img/tintin_white.png" class="couv" alt="photo de tintin">
-            <<<<<<< HEAD <div class="title">
+<div class="title">
                 <h1>TINTIN</h1>
                 <h2>Développeur web</h2>
+
     </div>
     </header>
     <p class="introduction">Je suis en reconversion professionnelle développeur web. Dans mon ancienne vie,
