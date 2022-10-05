@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	<link rel="stylesheet" href="contact.css">
 	<link rel="stylesheet" href="navbar.css">
 	<link rel="stylesheet" href="root.css">
-	<title>Document</title>
+	<title>Contact</title>
 </head>
 
 <body>
