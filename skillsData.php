@@ -1,19 +1,13 @@
 <?php
 
 $softSkillsDetails = [
-    'TOTO' => 'ias roots in a piece of classical Latin iece of classical Latin i
-        iterature from a treatise on the theo ',
-    'Self-learner' => 'Lorem ias roots in a piece of classical Latin iece of classical Latin i
-        iterature from a treatise on the theo ',
-    'Curieux' => 'Lorem ias roots in a piece of classical Latin iece of classical Latin i
-        iterature from a treatise on the theo ',
+    'Autonomie' => 'De par mes aventures palnetaires, je suis capable de me debrouiller seul dans toutes les situations',
+    'Self-learner' => 'J\'ai du faire face a de nombreux challenges et tout apprendre en un temps record !',
+    'Curieux' => 'Je suis reporter, c\'est bien sur ma premiere qualité !',
 ];
 
 $hardSkillsDetails = [
-    'HTML/CSS' => 'Lorem ias roots in a piece of classical Latin iece of classical Latin i
-        iterature from a treatise on the theo ',
-    'Node JS' => 'Lorem ias roots in a piece of classical Latin iece of classical Latin i
-        iterature from a treatise on the theo ',
-    'PHP Symphony' => 'Lorem ias roots in a piece of classical Latin iece of classical Latin i
-        iterature from a treatise on the theo ',
+    'HTML/CSS' => 'J\ai developpé un super CV, montrant ce qu\'on a pu realiser en equipe sur HTML et CSS',
+    'Node JS' => ' A mes heures perdues, je programme en Node JS ',
+    'PHP Symphony' => 'J\ai eu une super formation specialisée en PHP qui m\'a permis de faire le tour du PHP ',
 ];
