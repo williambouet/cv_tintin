@@ -1,0 +1,170 @@
+@import url('http://fonts.cdnfonts.com/css/tintin');
+
+:root {
+
+
+    --primary-color: #b04f23;
+    /*costume*/
+    --secondary-color: #e8f0de;
+    /*fond vert*/
+    --secondary-color-icone: #e5c39b;
+    /*manteau*/
+    --shadow-color: #aca29e;
+    --dark-color: #1d0d06;
+    --light-color: #f8e3d9;
+
+
+
+    --font-family: 'Tintin', sans-serif;
+
+    --font-size-s: 0.7rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.5rem;
+
+    /* --height-head: 50px;
+    --height-menu: 60px;
+    --height-main-titles: 100px;
+    --width-photo: 80px;
+    --width-logo: 2rem;
+    --width-menu: 350px;
+    --width-decoration: 50px;
+    --width-cards: 95%; */
+
+
+    --border: 1px;
+
+    --radius-photo: 50%;
+
+    --radius-border: 4px;
+    --shadow-border: 2px;
+
+    --spacing: 8px;
+    --spacing-x2: calc(var(--spacing) * 2);
+    --spacing-x3: calc(var(--spacing) * 3);
+    --spacing-x4: calc(var(--spacing) * 4);
+    --space-interline: 150%;
+
+    --aspect-square: 1;
+    --aspect-rectangle: 2;
+    --border-circle: 50%;
+
+    --transition-time: 0.3s;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*nav bar */
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: var(--radius-border);
+}
+
+a {
+    color: var(--light-color);
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size-m);
+}
+
+a:hover {
+    color: var(--dark-color);
+}
+
+a:active {
+    color: var(--secondary-color);
+}
+
+.imgLogo {
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    aspect-ratio: 1;
+    justify-self: flex-start;
+}
+
+.anchors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+/* acceil */
+body {
+    background-image: url("./img/fond2.jpg");
+
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-xxl);
+    font-family: var(--font-family);
+    color: var(--light-color);
+
+
+}
+
+article {
+    display: flex;
+    justify-content: center;
+
+    padding: var(--spacing);
+    width: 80%;
+
+
+
+
+    border: solid var(--dark-color) var(--spacing-x2);
+    border-radius: var(--radius-border);
+    box-shadow: var(--dark-color);
+    line-height: var(--space-interline);
+    font-size: var(--font-size-l);
+    background: var(--primary-color);
+    color: var(--light-color);
+
+}
+
+img {
+    border: solid var(--dark-color) var(--spacing-x2);
+    border-radius: var(--radius-border);
+    background: var(--primary-color);
+
+    margin: var(--spacing-x3);
+    padding: var(--spacing-x2);
+
+}

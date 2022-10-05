@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,20 +13,23 @@
 </head>
 
 <body>
-    
+
     <?php include_once("navbar.php"); ?>
 
-    <header>
-    <img src="img/id-tintin.png" alt="photo de tintin">
-    
-    </header>
+    <div class="cover">
+        <header>
 
-    <section>
-        <h1>Engage Tintin</h1>
-            <article>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum quasi, corrupti nam expedita accusantium ducimus vitae quo aperiam! Ratione quidem autem magni adipisci porro reprehenderit totam cumque repellendus nobis.
-            Consequuntur soluta voluptatibus magnam quibusdam ipsam eius adipisci. Similique omnis fugiat sunt, reprehenderit dolores velit. Libero aperiam soluta, quisquam rerum fugit sit deserunt! Incidunt excepturi tempora laboriosam cupiditate. A, natus!   
-            </article>
-    </section>
+            <img src="img/tintin_white.png" class="couv" alt="photo de tintin">
+            <h1>TINTIN cherche du travail</h1>
+
+        </header>
+        <p class="introduction">Je suis en reconversion professionnelle développeur web. Dans mon ancienne vie,
+            j'étais reporteur. J'ai vécu beaucoup d'histoire différente dans ma carrière avec de nombreuses
+            aventures aussi folle les unes que les autres . J'ai même côtoyé les étoiles.
+            Découvre mon CV complet et je reste à votre disposition pour toute information complémentaire.</p>
+
+    </div>
+
 </body>
+
 </html>
