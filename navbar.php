@@ -7,7 +7,7 @@
             <a href="education.php">Formation</a>
             <a href="work_exp.php">Experience professionelle</a>  
             <a href="skills.php">Skills</a>
-            <a href="contact_PHP.php">Contact</a>
+            <a href="contact.php">Contact</a>
         </div>
         <a class="burger" href="#links">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
