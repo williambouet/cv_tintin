@@ -43,13 +43,25 @@
     background-color:var(--case-color-1);
 }
 
-ul {
-    text-align: left;
-}
 
-li {
+
+.job div {
     font-size: var(--font-size-m);
     font-family: var(--font-family);
+    list-style: none;
+    margin:0;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    width:50%;
+}
+
+.job div p:nth-child(1)::before{
+    content:"🗓️    ";
+}
+
+.job div p:nth-child(2)::before{
+    content: "🗺️   ";
 }
 
 .talking {
@@ -170,7 +182,7 @@ li {
 
 .curious_tintin {
     display: none;
-    aspect-ratio: var(--aspect-rectangle);
+
 }
 
 
@@ -205,8 +217,16 @@ li {
         color: var(--dark-color);
         font-size: var(--font-size-xxl);
     }
-    li{
+
+    .job div{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .job div p{
         font-size: var(--font-size-l);
+        padding-top: var(--spacing-x3);
+
     }
 
 
