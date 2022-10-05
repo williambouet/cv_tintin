@@ -58,18 +58,17 @@
     box-sizing: border-box;
 }
 
-
 body {
-    padding: 0px;
     display: flex;
+    gap: 0.5rem;
     flex-direction: column;
-    margin: 0.2rem;
+    justify-content: center;
+    padding: 0px;
     margin-top: 0px;
-    background-color: var(--secondary-color);
+    margin-bottom: 0px;
+    background-color: #e8f0de;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 150%;
-    padding-right: 0.2rem;
-    background-image: url("./img/couverture_tintin.png");
 }
 
 h1,
@@ -112,7 +111,7 @@ h3 {
 .skillsItems:hover {
     opacity: 1;
     border: 4px solid var(--dark-color);
-    box-shadow: 6px 2px 2px black;
+    box-shadow: 3px 2px 2px var(--dark-color);
 }
 
 .skillsDetails {
@@ -123,17 +122,6 @@ h3 {
     background-color: none;
 }
 
-body {
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    justify-content: center;
-    border: blue 2 px solid;
-    margin: 3px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    background-color: none;
-}
 
 .skillsTitle {}
 
