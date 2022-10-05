@@ -17,10 +17,14 @@
 
     <div class="cover">
         <header>
-            <h2>Les mésaventures de </br>TINTIN </br>*</h2>
-            <h1>TINTIN </br>cherche du travail</h1>
+
+            <h1>TINTIN cherche du travail</h1>
 
             <img src="img/tintin_white.png" class="couv" alt="photo de tintin">
+            <p>Je suis en reconversion professionnelle développeur web. Dans mon ancienne vie,
+            j'étais reporteur. J'ai vécu beaucoup d'histoire différente dans ma carrière avec de nombreuses
+             aventures aussi folle les unes que les autres . J'ai même côtoyé les étoiles.
+              Découvre mon CV complet et je reste à votre disposition pour toute information complémentaire.</p>
             <div class="signature" >Projet 1 - Cédric - Dimitri - Lucian - William</div>
         </header>
     </div>

@@ -2,7 +2,6 @@
 body {
     backdrop-filter: blur(5px);
     background-image: url(img/albums-tintin.jpg);
-
 }
 
 
@@ -29,6 +28,7 @@ header{
     max-width: 800px;
     border-left: #fc9f0d solid 16px;
     color:var(--light-color);
+    gap: 3rem;
 }
 
 h1 {
