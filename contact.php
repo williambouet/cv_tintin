@@ -1,7 +1,7 @@
 <?php
 
 $subjects = [
-	'sujet' => 'Votre sujet',
+	'' => 'Votre sujet',
 	'hello' => 'Me faire un coucou',
 	'job' => 'M\'embaucher',
 	'investigation' => 'Me solliciter pour une enquête',
@@ -10,30 +10,37 @@ $subjects = [
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	$contact = array_map('trim', $_POST);
-    /* echo htmlentities($contact['name']); */
+	/* echo htmlentities($contact['name']); */
 
 	$errors = [];
 
 	if (empty($contact['name'])) {
-        $errors[] = 'Le nom est obligatoire';
-    }
-
-	if (empty($contact['email'])) {
-        $errors[] = 'L\'email est obligatoire';
-	
-    }
-
-	if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors[] = 'Le format d\'email est incorrect';
+		$errors[] = 'Le nom est obligatoire';
 	}
 
-	if(!key_exists($contact['subject'], $subjects)) {
-        $errors[] = 'Le sujet est incorrect';
-    }
+	if (empty($contact['email'])) {
+		$errors[] = 'L\'email est obligatoire';
+	}
+
+	if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
+		$errors[] = 'Le format d\'email est incorrect';
+	}
+
+	if (empty($contact['phone'])) {
+		$errors[] = 'Le téléphone est obligatoire';
+	}
+
+	if (!key_exists($contact['subject'], $subjects)) {
+		$errors[] = 'Le sujet est incorrect';
+	} 
+
+	/* if (!in_array_($contact['subject'], $subjects)) {
+		$errors[] = 'Le sujet est incorrect'; 
+	}*/
 
 	if (empty($contact['message'])) {
-        $errors[] = 'Le message est obligatoire';
-    }
+		$errors[] = 'Le message est obligatoire';
+	}
 
 	if (empty($errors)) {
 		header('Location: thanks.php');
@@ -69,8 +76,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 				<h2>Contactez-moi</h2>
 
-				<form id="contact_form" action="/thanks.php" method="POST" novalidate>
-				<?php if (!empty($errors)) : ?>
+				<form id="contact_form" action="thanks.php" method="POST" >
+					<?php if (!empty($errors)) : ?>
 						<ul class="error">
 							<?php foreach ($errors as $error) : ?>
 								<li><?= $error; ?></li>
@@ -86,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 					<label for="phone-number">Votre téléphone</label>
 					<input type="phone" id="phone" class="field" placeholder="Votre telephone" name="phone" required value="<?= $contact['phone'] ?? '' ?>">
-					
+
 					<label for="subject">Choisissez un sujet</label>
 					<select type="text" id="subject" class="field" placeholder="Sujet" name="subject" required>
 						<?php foreach ($subjects as $subject => $subjectMessage) : ?>
@@ -99,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					<label for="message">Votre message</label>
 					<textarea name="message" placeholder="Message" id="message" class="field" required><?= $contact['message'] ?? '' ?></textarea>
 
-	
+
 					<button class="btn" value="submit">Envoyez</button>
 				</form>
 			</div>
