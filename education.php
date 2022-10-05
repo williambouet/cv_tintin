@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="root.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="./navbar.css">
     <link href="http://fonts.cdnfonts.com/css/tintin" rel="stylesheet">
     <link rel="stylesheet" href="./education.css">
     <title>CV de Tintin</title>
@@ -23,93 +23,34 @@
         <div class="firstRow"></div>
 
 
-        <div class="border borderR borderT borderB planche4 case1"></div>
-        <div class="job case2">Formation auprès du Professeur Tournesol
-            <ul>
-                <li>1941</li>
-                <li>France</li>
-            </ul>
-        </div>
-        <div class="border borderB borderL borderT planche3 case3"></div>
+        <?php require 'data_education.php'; ?>
 
-        <div class="border borderR borderT borderB planche1 case4"></div>
-        <div class="talking case5">
-            <div class="bubble ">J'ai participé à des inventions pour le concours Lépine, jusqu'à étudier la physique nucléaire avec cet éminent Professeur.</div>
-            <div class="images_tintin">
-                <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
-                <img src="" alt=" " class="curious_tintin">
+        <?php foreach ($educations as $education) { ?>
+
+            <div class="border borderR borderT borderB <?php echo $education['class_vignets']; ?>"></div>
+            <div class="job <?php echo $education['class_job']; ?>"><?php echo $education['job']; ?>
+                <div>
+                    <p><?php echo $education['year']; ?></p>
+                    <p><?php echo $education['location']; ?></p>
+                </div>
             </div>
-        </div>
-        <div class="border borderB borderL borderT planche2 case6"></div>
+            <div class="border borderB borderL borderT <?php echo $education['class_border1']; ?>"></div>
 
-        <div class="border borderR borderT borderB planche5 case7"></div>
-        <div class="job case8">Années sabbatiques
-            <ul>
-                <li>1941</li>
-                <li>Afrique</li>
-            </ul>
-        </div>
-        <div class="border borderB borderL borderT planche6 case9"></div>
-
-        <div class="border borderR borderT borderB planche3 case10"></div>
-        <div class="talking case11">
-            <div class="bubble">J'ai voyagé à travers le monde et appris auprès d'un marin au langage fleurie, à l'haleine chargée, mais par chance son portefeuille le devint également.</div>
-
-            <div class="images_tintin">
-                <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
-                <img src="" alt=" " class="curious_tintin">
-             </div>
-
-        </div>
-        <div class="border borderB borderL borderT planche4 case12"></div>
-
-        <div class="border borderR borderT borderB planche2 case13"></div>
-        <div class="job case14">Stage de découverte d'entreprises
-            <ul>
-                <li>1932</li>
-                <li>France</li>
-            </ul>
-        </div>
-
-        <div class="border borderB borderL borderT planche1 case15"></div>
-
-
-        <div class="border borderR borderT borderB planche5 case16"></div>
-        <div class="talking case17">
-            <div class="bubble ">J'ai eu la chance de découvrir le métier de détective privé auprès de deux experts en confusions, malentendus et méprises !</div>
-            <div class="images_tintin">
-                <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
-                <img src="" alt=" " class="mushroom">
+            <div class="border borderR borderT borderB <?php echo $education['class_border2']; ?>"></div>
+            <div class="talking <?php echo $education['class_talking']; ?>">
+                <div class="bubble "><?php echo $education['talking']; ?></div>
+                <div class="images_tintin">
+                    <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
+                    <img src="<?php echo $education['source_img']; ?>" alt=" " class="curious_tintin <?php echo $education['class_img']; ?>">
+                </div>
             </div>
-        </div>
-        <div class="border borderB borderL borderT planche6 case18"></div>
+            <div class="border borderB borderL borderT <?php echo $education['class_border3']; ?>"></div>
 
-        <div class="border borderR borderT borderB planche3 case19"></div>
-
-        <div class="job case20">Ecole de la vie
-
-            <ul>
-                <li>1929</li>
-                <li>Belgique</li>
-            </ul>
-        </div>
-        <div class="border borderB borderL borderT planche2 case21"></div>
-
-        <div class="border borderR borderT borderB planche1 case22"></div>
-        <div class="talking case23">
-            <div class="bubble">J'ai énormément appris après mon voyage en union-soviétique. </br> J'ai donc voulu m'essayer à d'autres activités...</div>
-
-            <div class="images_tintin">
-                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
-                 <img src="" alt=" " class="curious_tintin maya">
-            </div>
-     </div>
-
-        <div class="border borderB borderL borderT planche4 case24"></div>
+        <?php } ?>
 
 
     </div>
-    <!--  ci-dessous à effacer  -->
+
 
 </body>
 
