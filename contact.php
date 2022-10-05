@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 				<h2>Contactez-moi</h2>
 
-				<form id="contact_form" action="" method="POST" novalidate>
+				<form id="contact_form" action="thanks.php" method="POST" novalidate>
 				<?php if (!empty($errors)) : ?>
 						<ul class="error">
 							<?php foreach ($errors as $error) : ?>
