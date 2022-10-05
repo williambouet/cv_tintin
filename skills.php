@@ -19,8 +19,8 @@
         <div class="skillsContainer softsSkillsContainer">
             <div class="skillsComicsBox">
                 <div class="skillsTitleANDskillsPicture">
-                    <h2 class="skillsTitle">SOFT SKILLS</h2>
-                    <img class="imgLogoSoft" src="./img/id-tintin.png" alt="space ship" srcset="">
+                    <h1 class="skillsTitle">SOFT SKILLS</h2>
+                        <img class="imgLogoSoft" src="./img/id-tintin.png" alt="space ship" srcset="">
                 </div>
                 <div class="skillsText">
                     <?php foreach ($softSkillsDetails as $skillsTitle => $skillsDescription) { ?>
@@ -35,8 +35,8 @@
         <div class="skillsContainer hardSkillsContainer">
             <div class="skillsComicsBox">
                 <div class="skillsTitleANDskillsPicture">
-                    <h2 class="skillsTitle">HARD SKILLS</h2>
-                    <img class="imgLogoHard" src="./img/spaceShipFlat.png" alt="space ship" srcset="">
+                    <h1 class="skillsTitle">HARD SKILLS</h2>
+                        <img class="imgLogoHard" src="./img/spaceShipFlat.png" alt="space ship" srcset="">
                 </div>
                 <div class="skillsText">
                     <?php foreach ($hardSkillsDetails as $skillsTitle => $skillsDescription) { ?>

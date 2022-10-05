@@ -15,7 +15,7 @@
 <body>
 
     <?php include_once('navbar.php') ?>
-
+    <h1 class="page_title">Formations</h1>
     <div class="vignettes">
 
         <div class="firstRow"></div>

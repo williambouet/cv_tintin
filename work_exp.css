@@ -1,3 +1,15 @@
+.page_title {
+    font-family: var(--font-family);
+    margin-top: var(--spacing-x4);
+    text-align: center;
+    font-size: var(--font-size-xxl);
+}
+
+.firstRow {
+    display: none;
+
+}
+
 .vignettes {
     width: var(--width-vignettes-jobs);
     height: 100%;
@@ -6,6 +18,7 @@
     grid-template-columns: var(--aside-vignettes) 1fr var(--aside-vignettes);
     grid-template-rows: var(--aside-vignettes) repeat(8, auto) var(--aside-vignettes);
     gap: var(--spacing-x2);
+    margin-top: var(--spacing-x2);
 }
 
 .job {
@@ -184,10 +197,10 @@
 
     .curious_tintin {
         display: initial;
-  
+
     }
 
-   }
+}
 
 @media screen and (min-width:1500px) {
 
@@ -274,6 +287,7 @@
 
     .case4 {
         border: none;
+
     }
 
     .case5 {
