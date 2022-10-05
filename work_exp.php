@@ -22,94 +22,35 @@
         <div class="firstRow"></div>
         <div class="firstRow"></div>
 
+        <?php require 'data_works.php'; ?>
 
-        <div class="border borderR borderT borderB planche4 case1"></div>
-        <div class="job case2">Journaliste indépendant
-            <div>
-                <p>1929</p>
-                <p>Belgique</p>
+        <?php foreach ($works as $work) { ?>
+
+            <div class="border borderR borderT borderB <?php echo $work['class_vignets']; ?>"></div>
+            <div class="job <?php echo $work['class_job']; ?>"><?php echo $work['job']; ?>
+                <div>
+                    <p><?php echo $work['year']; ?></p>
+                    <p><?php echo $work['location']; ?></p>
+                </div>
             </div>
-        </div>
-        <div class="border borderB borderL borderT planche3 case3"></div>
+            <div class="border borderB borderL borderT <?php echo $work['class_border1']; ?>"></div>
 
-        <div class="border borderR borderT borderB planche1 case4"></div>
-        <div class="talking case5">
-            <div class="bubble ">J'ai acquis une certaine facipté à me mêler d'affaires qui ne me regarde pas...</div>
-            <div class="images_tintin">
-                <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
-                <img src="" alt=" " class="curious_tintin">
+            <div class="border borderR borderT borderB <?php echo $work['class_border2']; ?>"></div>
+            <div class="talking <?php echo $work['class_talking']; ?>">
+                <div class="bubble "><?php echo $work['talking']; ?></div>
+                <div class="images_tintin">
+                    <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
+                    <img src="<?php echo $work['source_img']; ?>" alt=" " class="curious_tintin <?php echo $work['class_img']; ?>">
+                </div>
             </div>
-        </div>
-        <div class="border borderB borderL borderT planche2 case6"></div>
+            <div class="border borderB borderL borderT <?php echo $work['class_border3']; ?>"></div>
 
-        <div class="border borderR borderT borderB planche5 case7"></div>
-        <div class="job case8">Pilote en tout genre
-            <div>
-                <p>2001</p>
-                <p>New-York</p>
-            </div>
-        </div>
-        <div class="border borderB borderL borderT planche6 case9"></div>
+        <?php } ?>
 
-        <div class="border borderR borderT borderB planche3 case10"></div>
-        <div class="talking case11">
-            <div class="bubble">Sous-marin, avion , moto, jeep, chameau, fusée...Même sans permis, je le conduis !</div>
-
-            <div class="images_tintin">
-                <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
-                <img src="" alt=" " class="curious_tintin">
-             </div>
-
-        </div>
-        <div class="border borderB borderL borderT planche4 case12"></div>
-
-        <div class="border borderR borderT borderB planche2 case13"></div>
-        <div class="job case14">Traficant de drogue
-            <div>
-                <p>1993</p>
-                <p>Colombie</p>
-            </div>
-        </div>
-
-        <div class="border borderB borderL borderT planche1 case15"></div>
-
-
-        <div class="border borderR borderT borderB planche5 case16"></div>
-        <div class="talking case17">
-            <div class="bubble ">J'ai développé mon réseau de contact professionnel jusqu'en Colombie</div>
-            <div class="images_tintin">
-                <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
-                <img src="" alt=" " class="mushroom">
-            </div>
-        </div>
-        <div class="border borderB borderL borderT planche6 case18"></div>
-
-        <div class="border borderR borderT borderB planche3 case19"></div>
-
-        <div class="job case20">Roi Maya
-
-            <div>
-                <p>1949</p>
-                <p>Pérou</p>
-            </div>
-        </div>
-        <div class="border borderB borderL borderT planche2 case21"></div>
-
-        <div class="border borderR borderT borderB planche1 case22"></div>
-        <div class="talking case23">
-            <div class="bubble">J'ai développé ma capacité managériale et mon sens de l'autorité.</div>
-
-            <div class="images_tintin">
-                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
-                 <img src="" alt=" " class="curious_tintin maya">
-            </div>
-     </div>
-
-        <div class="border borderB borderL borderT planche4 case24"></div>
 
 
     </div>
-    <!--  ci-dessous à effacer  -->
+
 
 </body>
 

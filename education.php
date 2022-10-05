@@ -37,7 +37,7 @@
             <div class="bubble ">J'ai participé à des inventions pour le concours Lépine, jusqu'à étudier la physique nucléaire avec cet éminent Professeur.</div>
             <div class="images_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
-                <img src="" alt=" " class="curious_tintin">
+                <img src="./img/tournesol.png" alt=" " class="curious_tintin">
             </div>
         </div>
         <div class="border borderB borderL borderT planche2 case6"></div>
@@ -57,7 +57,7 @@
 
             <div class="images_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
-                <img src="" alt=" " class="curious_tintin">
+                <img src="./img/Haddock.png" alt=" " class="curious_tintin">
             </div>
 
         </div>
@@ -79,7 +79,7 @@
             <div class="bubble ">J'ai eu la chance de découvrir le métier de détective privé auprès de deux experts en confusions, malentendus et méprises !</div>
             <div class="images_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId" alt="Tintin salue">
-                <img src="" alt=" " class="mushroom">
+                <img src="./img/dupont.jpeg" alt=" " class="curious_tintin">
             </div>
         </div>
         <div class="border borderB borderL borderT planche6 case18"></div>
@@ -101,7 +101,7 @@
 
             <div class="images_tintin">
                 <img src="./img/Tintin_debout.png" class="tintinId reverse" alt="Tintin salue">
-                <img src="" alt=" " class="curious_tintin maya">
+                <img src="./img/milou.png" alt=" " class="curious_tintin">
             </div>
         </div>
 
