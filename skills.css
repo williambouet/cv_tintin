@@ -1,17 +1,16 @@
 :root {
 
 
-    --primary-color: #b04f23;
-    /*costume*/
-    --secondary-color: #e8f0de;
-    /*fond vert*/
-    --secondary-color-icone: #e5c39b;
-    /*manteau*/
+    --primary-color: #b04f23;    /*costume*/
+    --secondary-color: #e8f0de;    /*fond vert*/
+    --secondary-color-icone: #e5c39b;    /*manteau*/
     --shadow-color: #aca29e;
     --dark-color: #1d0d06;
     --light-color: #f8e3d9;
 
-
+    --case-color-1: #42733d;
+    --case-color-2:#a2c8f1;
+    --case-color-3: #efd3a5;
 
     --font-family: 'Tintin', sans-serif;
 
@@ -20,6 +19,20 @@
     --font-size-l: 1.5rem;
     --font-size-xl: 2rem;
     --font-size-xxl: 2.5rem;
+
+    /* --height-head: 50px;
+    --height-menu: 60px;
+    --height-main-titles: 100px;
+    --width-photo: 80px;
+    --width-logo: 2rem;
+    --width-menu: 350px;
+    --width-decoration: 50px;
+    --width-cards: 95%; */
+
+    --min-height-bubble:150px;
+    --width-cartoon : 100px;
+
+    --offset-tintin:-50px;
 
     --border: 1px;
 
