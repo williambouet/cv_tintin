@@ -7,35 +7,36 @@ $subjects = [
 	'investigation' => 'Me solliciter pour une enquête',
 ];
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST')
-
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	$contact = array_map('trim', $_POST);
-echo htmlentities($contact['name']);
+    /* echo htmlentities($contact['name']); */
 
-$errors = [];
+	$errors = [];
 
-if (empty($contact['name'])) {
-	$errors[] = 'Le nom est obligatoire';
-}
+	if (empty($contact['name'])) {
+        $errors[] = 'Le nom est obligatoire';
+    }
 
-if (empty($contact['email'])) {
-	$errors[] = 'L\'adresse email est obligatoire';
+	if (empty($contact['email'])) {
+        $errors[] = 'L\'email est obligatoire';
+	
+    }
 
 	if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
-		$errors[] = 'Le format d\'email est incorrect';
+        $errors[] = 'Le format d\'email est incorrect';
 	}
+
+	if(!key_exists($contact['subject'], $subjects)) {
+        $errors[] = 'Le sujet est incorrect';
+    }
 
 	if (empty($contact['message'])) {
-		$errors[] = 'Le message est obligatoire';
-	}
-
-	if (!key_exists($contact['subject'], $subjects)) {
-		$errors[] = 'Le sujet est incorrect';
-	}
+        $errors[] = 'Le message est obligatoire';
+    }
 
 	if (empty($errors)) {
-		header('Location: contact_PHP.php');
+		header('Location: thanks.php');
 	}
 }
 ?>
@@ -68,16 +69,15 @@ if (empty($contact['email'])) {
 
 				<h2>Contactez-moi</h2>
 
-				<form id="contact_form" action="/thanks.php" method="POST">
-					
-					<?php if (!empty($errors)) : ?>
-            			<ul class="error">
-                			<?php foreach ($errors as $error) : ?>
-                    			<li><?= $error; ?></li>
-                			<?php endforeach; ?>
-            			</ul>
-        			<?php endif; ?> 
-					
+				<form id="contact_form" action="" method="POST" novalidate>
+				<?php if (!empty($errors)) : ?>
+						<ul class="error">
+							<?php foreach ($errors as $error) : ?>
+								<li><?= $error; ?></li>
+							<?php endforeach; ?>
+						</ul>
+					<?php endif; ?>
+
 					<label for="name">Votre nom</label>
 					<input type="text" id="name" class="field" placeholder="Votre nom" name="name" required value="<?= $contact['name'] ?? '' ?>">
 
@@ -86,7 +86,7 @@ if (empty($contact['email'])) {
 
 					<label for="phone-number">Votre téléphone</label>
 					<input type="phone" id="phone" class="field" placeholder="Votre telephone" name="phone" required value="<?= $contact['phone'] ?? '' ?>">
-
+					
 					<label for="subject">Choisissez un sujet</label>
 					<select type="text" id="subject" class="field" placeholder="Sujet" name="subject" required>
 						<?php foreach ($subjects as $subject => $subjectMessage) : ?>
@@ -95,12 +95,13 @@ if (empty($contact['email'])) {
 							</option>
 						<?php endforeach; ?>
 					</select>
+
 					<label for="message">Votre message</label>
 					<textarea name="message" placeholder="Message" id="message" class="field" required><?= $contact['message'] ?? '' ?></textarea>
 
+	
 					<button class="btn" value="submit">Envoyez</button>
 				</form>
-
 			</div>
 
 			<div class="bottom-left">
