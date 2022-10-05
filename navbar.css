@@ -71,8 +71,7 @@ nav {
     padding-inline: var(--spacing-x3);
     font-family: var(--font-family);
 
-/*     border-radius: var(--radius-border);
- */}
+}
 
 nav a {
     color: var(--light-color);
@@ -97,6 +96,7 @@ nav a:hover {
 }
 .logo img{
     height: 60px;
+    padding: 5px;
     
 }
 
