@@ -1,3 +1,5 @@
+<?php include 'skillsData.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,68 +14,41 @@
 </head>
 
 <body>
-    <div>
-        <?php include_once("navbar.php"); ?>
-    </div>
+    <?php include_once("navbar.php"); ?>
     <div class="hardAndSoftContainer">
         <div class="skillsContainer softsSkillsContainer">
             <div class="skillsComicsBox">
                 <div class="skillsTitleANDskillsPicture">
-                    <h2 class="skillsTitle">SOFT SKILLS</h2>
-                    <img class="imgLogoSoft" src="./img/id-tintin.png" alt="space ship" srcset="">
+                    <h1 class="skillsTitle">SOFT SKILLS</h2>
+                        <img class="imgLogoSoft" src="./img/id-tintin.png" alt="space ship" srcset="">
                 </div>
                 <div class="skillsText">
-                    <div class=" bubble skillsItems skillsItems1 ">
-                        <h3>Autonomie</h3>
-                        <div class="skillsDetails">Lorem ias roots in a piece of classical Latin iece of classical Latin iece of classical Latin iece of classical Latin iece of classical Latin literature from
-                            a treatise on the theo
+                    <?php foreach ($softSkillsDetails as $skillsTitle => $skillsDescription) { ?>
+                        <div class=" bubble skillsItems skillsItems1 ">
+                            <h3><?= $skillsTitle  ?></h3>
+                            <div class="skillsDetails"><?= $skillsDescription  ?></div>
                         </div>
-                    </div>
-                    <div class="bubble skillsItems skillsItems2 ">
-                        <h3>Esprit d'equipe</h3>
-                        <div class="skillsDetails">Lorem ias roots in a piece of classical Latin literature from
-                            a treatise on the theo
-                        </div>
-                    </div>
-                    <div class="bubble skillsItems skillsItems3 ">
-                        <h3>Curieux</h3>
-                        <div class="skillsDetails">Lorem ias roots in a piece of piece of piece of piece of classical Latin literature from
-                            a treatise on the theo
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
         <div class="skillsContainer hardSkillsContainer">
             <div class="skillsComicsBox">
                 <div class="skillsTitleANDskillsPicture">
-                    <h2 class="skillsTitle">HARD SKILLS</h2>
-                    <img class="imgLogoHard" src="./img/spaceShipFlat.png" alt="space ship" srcset="">
+                    <h1 class="skillsTitle">HARD SKILLS</h2>
+                        <img class="imgLogoHard" src="./img/spaceShipFlat.png" alt="space ship" srcset="">
                 </div>
                 <div class="skillsText">
-                    <div class="bubble skillsItems skillsItems2 ">
-                        <h3>HTML/CSS</h3>
-                        <div class="skillsDetails">Lorem ias roots in a piece of classical Latin literature from
-                            a treatise on the theo
+                    <?php foreach ($hardSkillsDetails as $skillsTitle => $skillsDescription) { ?>
+                        <div class=" bubble skillsItems skillsItems1 ">
+                            <h3><?= $skillsTitle  ?></h3>
+                            <div class="skillsDetails"><?= $skillsDescription  ?></div>
                         </div>
-                    </div>
-                    <div class="bubble skillsItems skillsItems3 ">
-                        <h3>Node JS</h3>
-                        <div class="skillsDetails">Lorem ias roots in a piece of classical Latin literature from
-                            a treatise on the theo
-                        </div>
-                    </div>
-                    <div class="bubble skillsItems skillsItems4 ">
-                        <h3>PHP / Symphony</h3>
-                        <div class="skillsDetails">Lorem ias roots in a piece of classical Latin literature from
-                            a treatise on the theo
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
     </div>
-    <div class="tempoFoot">tempoFoot</div>
 </body>
 
 </html>

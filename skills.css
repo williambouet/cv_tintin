@@ -1,83 +1,23 @@
-:root {
-
-
-    --primary-color: #b04f23;    /*costume*/
-    --secondary-color: #e8f0de;    /*fond vert*/
-    --secondary-color-icone: #e5c39b;    /*manteau*/
-    --shadow-color: #aca29e;
-    --dark-color: #1d0d06;
-    --light-color: #f8e3d9;
-
-    --case-color-1: #42733d;
-    --case-color-2:#a2c8f1;
-    --case-color-3: #efd3a5;
-
-    --font-family: 'Tintin', sans-serif;
-
-    --font-size-s: 0.7rem;
-    --font-size-m: 1rem;
-    --font-size-l: 1.5rem;
-    --font-size-xl: 2rem;
-    --font-size-xxl: 2.5rem;
-
-    /* --height-head: 50px;
-    --height-menu: 60px;
-    --height-main-titles: 100px;
-    --width-photo: 80px;
-    --width-logo: 2rem;
-    --width-menu: 350px;
-    --width-decoration: 50px;
-    --width-cards: 95%; */
-
-    --min-height-bubble:150px;
-    --width-cartoon : 100px;
-
-    --offset-tintin:-50px;
-
-    --border: 1px;
-
-    --radius-photo: 50%;
-
-    --radius-border: 4px;
-    --shadow-border: ;
-
-    --spacing: 8px;
-    --spacing-x2: calc(var(--spacing) * 2);
-    --spacing-x3: calc(var(--spacing) * 3);
-    --spacing-x4: calc(var(--spacing) * 4);
-    --space-interline: 1.5rem;
-
-    --aspect-square: 1;
-    --aspect-rectangle: 2;
-    --border-circle: 50%;
-
-    --transition-time: 0.3s;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-
 body {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    margin: 0.2rem;
+    justify-content: center;
     margin-top: 0px;
-    background-color: var(--secondary-color);
+    background-color: #E8F0DE;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 150%;
-    padding-right: 0.2rem;
-    background-image: url("./img/couverture_tintin.png");
+    gap: 0.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+
 
 h1,
 h2,
 h3 {
     font-family: var(--font-family);
 }
-
 
 .tempoNav {
     background-color: var(--primary-color);
@@ -96,10 +36,9 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--case-color-1);
     border-radius: var(--radius-border);
     border: 3px solid var(--dark-color);
-
 }
 
 .skillsItems {
@@ -107,12 +46,10 @@ h3 {
     background-color: #fff;
 }
 
-
-
 .skillsItems:hover {
     opacity: 1;
     border: 4px solid var(--dark-color);
-    box-shadow: 6px 2px 2px black;
+    box-shadow: 3px 2px 2px var(--dark-color);
 }
 
 .skillsDetails {
@@ -120,18 +57,6 @@ h3 {
 }
 
 .softsSkillsContainer {
-    background-color: none;
-}
-
-body {
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    justify-content: center;
-    border: blue 2 px solid;
-    margin: 3px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     background-color: none;
 }
 
@@ -196,7 +121,6 @@ cd .skillsText {
     .skillsItems {
         height: 180px;
     }
-
 }
 
 .bubble {
@@ -218,3 +142,6 @@ cd .skillsText {
     line-height: var(--space-interline);
     z-index: 0;
 }
+
+
+Envoyer un message projet_tintin
