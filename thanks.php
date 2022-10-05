@@ -5,8 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="root.css">
-	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="thanks.css">
 	<link rel="stylesheet" href="navbar.css">
 	<title>Document</title>
 </head>
@@ -15,18 +14,23 @@
 	<?php include_once("navbar.php"); ?>
 
 	<div class="container">
-		<div class="contact-box">
+
+		<div class="message-box">
+
 			<div class="left"></div>
+
 			<div class="right">
-				<h2>Contactez-moi</h2>
-				<form id="contact_form">
-					<input type="text" id="name" class="field" placeholder="Votre nom" required="required">
-					<input type="email" id="email" class="field" placeholder="Votre email" required="required">
-					<input type="text" id="sujet" class="field" placeholder="Sujet" required="required">
-					<textarea placeholder="Message" id="message" class="field" required="required"></textarea>
-					<button class="btn" value="submit">Envoyez</button>
-				</form>
+				<h2>Message envoyé, à bientot!</h2>
+					<div class="message">
+				<p>Merci <?php echo $_POST['user_name']; ?> de m'avoir contacté à propos de “<?php echo $_POST['subject']; ?>”.<br>
+
+					Je reviendrai vers vous via email à l’adresse <?php echo $_POST['email']; ?> ou par téléphone au <?php echo $_POST['phone']; ?> dans les plus brefs délais pour traiter votre demande : <br>
+					<?php echo $_POST['message']; ?>
+
+				</p>
+					</div>
 			</div>
+
 			<div class="bottom-left">
 				<h3>Tintin et Milou</h3>
 				<div class="address"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -46,6 +50,7 @@
 					<h4>&nbsp;contact@tintin.be</h4>
 				</div>
 			</div>
+
 			<div class="bottom-right">
 				<h3>Suivez-moi</h3>
 				<div class="linkedin">
@@ -60,8 +65,9 @@
 			</div>
 		</div>
 	</div>
-	</div>
-	<script src="contact.js"></script>
+
+
+</body>
 </body>
 
 </html>
