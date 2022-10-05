@@ -36,7 +36,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--case-color-1);
     border-radius: var(--radius-border);
     border: 3px solid var(--dark-color);
 }
