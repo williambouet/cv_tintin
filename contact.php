@@ -1,3 +1,47 @@
+<?php
+
+$subjects = [
+	'info' => 'Demander des informations',
+	'hello' => 'Me faire un coucou',
+	'job' => 'M\'embaucher',
+	'investigation' => 'Me solliciter pour une enquête',
+];
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+	$contact = array_map('trim', $_POST);
+    /* echo htmlentities($contact['name']); */
+
+	$errors = [];
+
+	if (empty($contact['name'])) {
+        $errors[] = 'Le nom est obligatoire';
+    }
+
+	if (empty($contact['email'])) {
+        $errors[] = 'L\'email est obligatoire';
+	
+    }
+
+	if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Le format d\'email est incorrect';
+	}
+
+	if(!key_exists($contact['subject'], $subjects)) {
+        $errors[] = 'Le sujet est incorrect';
+    }
+
+	if (empty($contact['message'])) {
+        $errors[] = 'Le message est obligatoire';
+    }
+
+	if (empty($errors)) {
+		header('Location: thanks.php');
+	}
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +52,7 @@
 	<link rel="stylesheet" href="root.css">
 	<link rel="stylesheet" href="contact.css">
 	<link rel="stylesheet" href="navbar.css">
+	<link rel="stylesheet" href="root.css">
 	<title>Document</title>
 </head>
 
@@ -15,19 +60,52 @@
 	<?php include_once("navbar.php"); ?>
 
 	<div class="container">
+
 		<div class="contact-box">
+
 			<div class="left"></div>
+
 			<div class="right">
+
 				<h2>Contactez-moi</h2>
-				<form id="contact_form">
-					<input type="text" id="name" class="field" placeholder="Votre nom" required="required">
-					<input type="email" id="email" class="field" placeholder="Votre email" required="required">
-					<input type="text" id="sujet" class="field" placeholder="Sujet" required="required">
-					<textarea placeholder="Message" id="message" class="field" required="required"></textarea>
+
+				<form id="contact_form" action="/thanks.php" method="POST" novalidate>
+				<?php if (!empty($errors)) : ?>
+						<ul class="error">
+							<?php foreach ($errors as $error) : ?>
+								<li><?= $error; ?></li>
+							<?php endforeach; ?>
+						</ul>
+					<?php endif; ?>
+
+					<label for="name">Votre nom</label>
+					<input type="text" id="name" class="field" placeholder="Votre nom" name="name" required value="<?= $contact['name'] ?? '' ?>">
+
+					<label for="email">Votre email</label>
+					<input type="email" id="email" class="field" placeholder="Votre email" name="email" required value="<?= $contact['email'] ?? '' ?>">
+
+					<label for="phone-number">Votre téléphone</label>
+					<input type="phone" id="phone" class="field" placeholder="Votre telephone" name="phone" required value="<?= $contact['phone'] ?? '' ?>">
+					
+					<label for="subject">Choisissez un sujet</label>
+					<select type="text" id="subject" class="field" placeholder="Sujet" name="subject" required>
+						<?php foreach ($subjects as $subject => $subjectMessage) : ?>
+							<option value="<?= $subject ?>" <?php if (isset($contact['subject']) && $contact['subject'] === $subject) : ?> selected <?php endif; ?>>
+								<?= $subjectMessage ?>
+							</option>
+						<?php endforeach; ?>
+					</select>
+
+					<label for="message">Votre message</label>
+					<textarea name="message" placeholder="Message" id="message" class="field" required><?= $contact['message'] ?? '' ?></textarea>
+
+	
 					<button class="btn" value="submit">Envoyez</button>
 				</form>
 			</div>
+
 			<div class="bottom-left">
+
 				<h3>Tintin et Milou</h3>
 				<div class="address"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
 						<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
@@ -46,7 +124,9 @@
 					<h4>&nbsp;contact@tintin.be</h4>
 				</div>
 			</div>
+
 			<div class="bottom-right">
+
 				<h3>Suivez-moi</h3>
 				<div class="linkedin">
 					<h4><a href="https://www.tintin.com/fr">LinkedIn/in/tintin</a></h4>
@@ -57,11 +137,12 @@
 				<div class="twitter">
 					<h4><a href="https://www.twitter.com/tintin">Twitter.com/tintin</a></h4>
 				</div>
+
 			</div>
+
 		</div>
+
 	</div>
-	</div>
-	<script src="contact.js"></script>
 </body>
 
 </html>

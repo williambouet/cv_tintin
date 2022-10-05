@@ -21,14 +21,13 @@
 
 			<div class="right">
 				<h2>Message envoyé, à bientot!</h2>
-					<div class="message">
-				<p>Merci <?php echo $_POST['user_name']; ?> de m'avoir contacté à propos de “<?php echo $_POST['subject']; ?>”.<br>
+				<div class="message">
+					<p id="message">
+						Merci <?php echo $_POST['name']; ?> de nous avoir contacté à propos de “<?php echo $_POST['subject']; ?>”.<br>
 
-					Je reviendrai vers vous via email à l’adresse <?php echo $_POST['email']; ?> ou par téléphone au <?php echo $_POST['phone']; ?> dans les plus brefs délais pour traiter votre demande : <br>
-					<?php echo $_POST['message']; ?>
-
-				</p>
-					</div>
+						Je reviendrai vers vous via email à l’adresse "<?php echo $_POST['email']; ?>" ou par téléphone au "<?php echo $_POST['phone']; ?>" dans les plus brefs délais pour traiter votre demande : <br>
+						"<?php echo $_POST['message']; ?>"
+				</div>
 			</div>
 
 			<div class="bottom-left">
