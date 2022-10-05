@@ -1,7 +1,7 @@
 <?php
 
 $subjects = [
-	'info' => 'Demander des informations',
+	'sujet' => 'Votre sujet',
 	'hello' => 'Me faire un coucou',
 	'job' => 'M\'embaucher',
 	'investigation' => 'Me solliciter pour une enquête',
