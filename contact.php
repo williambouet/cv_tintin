@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	$contact = array_map('trim', $_POST);
 	/* echo htmlentities($contact['name']); */
+	
 
 	$errors = [];
 
@@ -32,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	if (!key_exists($contact['subject'], $subjects)) {
 		$errors[] = 'Le sujet est incorrect';
-	} 
+	}
 
 	/* if (!in_array_($contact['subject'], $subjects)) {
 		$errors[] = 'Le sujet est incorrect'; 
@@ -76,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 				<h2>Contactez-moi</h2>
 
-				<form id="contact_form" action="thanks.php" method="POST" >
+				<form id="contact_form" action="" method="POST" novalidate>
 					<?php if (!empty($errors)) : ?>
 						<ul class="error">
 							<?php foreach ($errors as $error) : ?>

@@ -23,11 +23,11 @@
 				<h2>Message envoyé, à bientot!</h2>
 				<div class="message">
 					<p id="message">
-					Bonjour <?php echo($_POST['name']) ?> ! <br>
+					Bonjour  ! <br>
 					Je vous recontacterai le plus rapidement via téléphone ou mail! <br>
 					A bientot! <br>
 					Tintin
-					<?php echo($_POST['subject']) ?>
+					
 				</div>
 			</div>
 

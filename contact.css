@@ -56,7 +56,8 @@ ul li {
 }
 .error {
 	font-family: var(--font-family-sans-serif);
-	float: ;
+	color: red;
+	
 }
 /* h2:after {
 	content: '';
