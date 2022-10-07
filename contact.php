@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					<label for="email">Votre email</label>
 					<input type="email" id="email" class="field" placeholder="email@mail.com" name="email" required value="<?= $contact['email'] ?? '' ?>">
 
-					<label for="phone-number">Votre téléphone</label>
+					<label for="phone">Votre téléphone</label>
 					<input type="phone" id="phone" class="field" placeholder="+00 0 00 00 00 00" name="phone" required value="<?= $contact['phone'] ?? '' ?>">
 
 					<label for="subject">Choisissez un sujet</label>
