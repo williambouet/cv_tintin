@@ -126,6 +126,66 @@ a:hover {
 	background-color: #e5c39b;
 }
 
+.ecran {
+	width:1300px;
+	height:900px;
+	position:relative;
+	margin:auto;
+}
+.ecran p{
+	text-align: center;
+	font-family: var(--font-family);
+	font-size: xx-large;
+	position: relative;
+	color: red;
+	font-weight: bolder;
+	rotate: 270deg;
+	translate: -50px  150px;
+} 
+
+.image {
+	width:50%;
+	position:absolute;
+	animation: move 6s linear;
+/* 	transform-origin:bottom; */
+	left:42%;
+	top:100%;
+	z-index:0;
+}
+
+@keyframes move {
+	0%{transform:rotate(0deg);top:100%;left:0%}
+	5%{transform:rotate(0deg);top:100%;left:0%}
+	10%{transform:rotate(0deg);top:90%;left:0%}
+	15%{transform:rotate(0deg);top:85%;left:0%}
+	20%{transform:rotate(0deg);top:80%;left:0%}
+	25%{transform:rotate(0deg);top:75%;left:0%}
+	30%{transform:rotate(0deg);top:70%;left:0%}
+	35%{transform:rotate(0deg);top:65%;left:0%}
+	40%{transform:rotate(0deg);top:60%;left:0%}
+	45%{transform:rotate(0deg);top:55%;left:0%}
+	50%{transform:rotate(0deg);top:50%;left:0%}
+	55%{transform:rotate(0deg);top:45%;left:0%}
+	60%{transform:rotate(0deg);top:40%;left:0%}
+	65%{transform:rotate(0deg);top:35%;left:0%}
+	70%{transform:rotate(0deg);top:30%;left:0%}
+	75%{transform:rotate(5deg);}
+	80%{transform:rotate(10deg);}
+	
+	80%{transform:rotate(15deg);}
+	80%{transform:rotate(20deg);}	
+	80%{transform:rotate(30deg);}	
+	80%{transform:rotate(45deg);}	
+	93%{transform:rotate(45deg);}
+	94%{transform:rotate(45deg);}	
+	95%{transform:rotate(45deg);}	
+	97%{transform:rotate(45deg);}
+	98%{transform:rotate(45deg);top:2%;left:75%}	
+	99%{transform:rotate(45deg);top:-10%;left:85%}
+	100%{transform:rotate(45deg);top:-20%;left:110%}
+
+}
+
 @media screen and (max-width: 880px) {
 	.contact-box {
 		grid-template-columns: 1fr;
