@@ -177,6 +177,8 @@ a:hover {
 	background-color: #e5c39b;
 }
 
+
+
 @media screen and (max-width: 880px) {
 	.contact-box {
 		grid-template-columns: 1fr;
@@ -185,4 +187,6 @@ a:hover {
 	.left {
 		height: 200px;
 	}
+
+
 } 
