@@ -124,8 +124,8 @@ body{
     font-family: var(--font-family-talking);
     border-radius: var(--radius-border);
     color: var(--dark-color);
-
-    line-height: var(--space-interline);
+/* 
+    line-height: var(--space-interline); */
     clip-path: polygon(1px 1px, 99% 1%, 99% 65%, 33% 66%, 30% 74%, 32.81% 73.38%, 22.2% 95.54%, 27.33% 74.5%, 23.5% 73.05%, 26.17% 65.52%, 1px 65.00%);
     
     min-height: var(--min-height-bubble);
@@ -227,6 +227,7 @@ body{
         margin: var(--spacing-x4);
         padding-inline: var(--spacing-x4);
     }
+
 
     .job{
         display: flex;

@@ -23,7 +23,7 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
 	align-items: center;
-	/* text-align: center; */
+	padding-bottom: var(--spacing);
 	background-color: #fff;
 	border: var(--border) solid var(--dark-color);
 	border-width: 4px;
@@ -33,6 +33,7 @@ body {
 	background: url("img/tintin_et_milou.png") no-repeat center;
 	background-size: contain;
 	height: 100%;
+
 }
 
 .right {
@@ -118,7 +119,7 @@ textarea {
 	justify-content: center;
 	flex-direction: column;
 	line-height: var(--spacing-x3);
-	padding: 10px;
+	margin-bottom: var(--spacing-x2);
 }
 
 .bottom-left h3 {
@@ -155,7 +156,7 @@ textarea {
 	justify-content: center;
 	flex-direction: column;
 	line-height: var(--spacing-x3);
-	padding: 10px;
+	margin-bottom: var(--spacing-x2);
 }
 
 .bottom-right h3 {
@@ -168,7 +169,7 @@ textarea {
 }
 
 .bottom-right h4 {
-	font-family: var(--font-family-sans-serif);
+	font-family: var(--font-family-talking);
 	font-weight: normal;
 	margin: 0;
 }
@@ -190,6 +191,7 @@ textarea {
 
 	.left {
 		height: 200px;
+		margin-top:15px;
 	}
 
 
