@@ -1,4 +1,4 @@
-body{
+body {
     background-color: var(--background-color);
 }
 
@@ -89,6 +89,8 @@ body{
     justify-content: space-between;
 
     border: solid var(--dark-color) var(--border-vignettes);
+    background-color: white;
+
 }
 
 .tintinId {
