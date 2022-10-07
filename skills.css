@@ -32,7 +32,7 @@ h3 {
     margin-top: 10rem;
 }
 
-.skillsTitleANDskillsPicture {
+.softSkillsTitleANDskillsPicture, .hardSkillsTitleANDskillsPicture {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,6 +40,11 @@ h3 {
     border-radius: var(--radius-border);
     border: 3px solid var(--dark-color);
 }
+
+.hardSkillsTitleANDskillsPicture {
+    background-color: var(--case-color-2);
+}
+
 
 .skillsItems {
     opacity: 1;
