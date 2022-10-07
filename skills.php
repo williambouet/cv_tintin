@@ -18,7 +18,7 @@
     <div class="hardAndSoftContainer">
         <div class="skillsContainer softsSkillsContainer">
             <div class="skillsComicsBox">
-                <div class="skillsTitleANDskillsPicture">
+                <div class="softSkillsTitleANDskillsPicture">
                     <h1 class="skillsTitle">SOFT SKILLS</h2>
                         <img class="imgLogoSoft" src="./img/id-tintin.png" alt="space ship" srcset="">
                 </div>
@@ -34,7 +34,7 @@
         </div>
         <div class="skillsContainer hardSkillsContainer">
             <div class="skillsComicsBox">
-                <div class="skillsTitleANDskillsPicture">
+                <div class="hardSkillsTitleANDskillsPicture">
                     <h1 class="skillsTitle">HARD SKILLS</h2>
                         <img class="imgLogoHard" src="./img/spaceShipFlat.png" alt="space ship" srcset="">
                 </div>

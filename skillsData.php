@@ -7,7 +7,7 @@ $softSkillsDetails = [
 ];
 
 $hardSkillsDetails = [
-    'HTML/CSS' => 'J\ai developpé un super CV, montrant ce qu\'on a pu realiser en equipe sur HTML et CSS',
+    'HTML/CSS' => 'J\'ai developpé un super CV, montrant ce qu\'on a pu realiser en equipe sur HTML et CSS',
     'Node JS' => ' A mes heures perdues, je programme en Node JS ',
-    'PHP Symphony' => 'J\ai eu une super formation specialisée en PHP qui m\'a permis de faire le tour du PHP ',
+    'PHP Symphony' => 'J\'ai eu une super formation specialisée en PHP qui m\'a permis de faire le tour du PHP ',
 ];
