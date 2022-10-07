@@ -19,6 +19,14 @@ h3 {
     font-family: var(--font-family);
 }
 
+
+.page_title {
+    font-family: var(--font-family);
+    margin-top: var(--spacing-x4);
+    text-align: center;
+    font-size: var(--font-size-xxl);
+}
+
 .tempoNav {
     background-color: var(--primary-color);
     height: 3rem;
@@ -97,6 +105,7 @@ cd .skillsText {
 .hardAndSoftContainer {
     display: flex;
     flex-direction: column;
+    margin-top:var(--spacing-x2);
 }
 
 @media screen and (min-width: 800px) {

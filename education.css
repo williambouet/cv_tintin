@@ -18,7 +18,7 @@ body{
 .vignettes {
     width: var(--width-vignettes-jobs);
     height: 100%;
-
+    margin-top: 0;
     display: grid;
     grid-template-columns: var(--aside-vignettes) 1fr var(--aside-vignettes);
     grid-template-rows: var(--aside-vignettes) repeat(8, auto) var(--aside-vignettes);

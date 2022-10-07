@@ -15,6 +15,7 @@
 
 <body>
     <?php include_once("navbar.php"); ?>
+    <h1 class="page_title">Skills</h1>
     <div class="hardAndSoftContainer">
         <div class="skillsContainer softsSkillsContainer">
             <div class="skillsComicsBox">
