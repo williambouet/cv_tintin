@@ -23,7 +23,7 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+	/* text-align: center; */
 	background-color: #fff;
 	border: var(--border) solid var(--dark-color);
 	border-width: 4px;
@@ -40,6 +40,7 @@ body {
 }
 
 h2 {
+	text-align: center;
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
@@ -47,6 +48,7 @@ h2 {
 }
 
 label {
+	text-align: start ;
 	font-family: var(--font-family-sans-serif);
 	
 }
@@ -124,7 +126,7 @@ textarea {
 }
 
 .bottom-left h4 {
-	font-family: var(--font-family-sans-serif);
+	font-family: var(--font-family-talking);
 	font-weight: normal;
 	margin: 0;
 }
@@ -171,11 +173,13 @@ textarea {
 	margin: 0;
 }
 
+  .socialinks {
+	font-family: var(--font-family-talking);
+} 
 
-
-a:hover {
+.socialinks:hover {
 	background-color: #e5c39b;
-}
+} 
 
 
 

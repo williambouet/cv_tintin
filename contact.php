@@ -87,16 +87,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					<?php endif; ?>
 
 					<label for="name">Votre nom</label>
-					<input type="text" id="name" class="field" placeholder="Votre nom" name="name" required value="<?= $contact['name'] ?? '' ?>">
+					<input type="text" id="name" class="field" placeholder="Pierre Dupont" name="name" required value="<?= $contact['name'] ?? '' ?>">
 
 					<label for="email">Votre email</label>
-					<input type="email" id="email" class="field" placeholder="Votre email" name="email" required value="<?= $contact['email'] ?? '' ?>">
+					<input type="email" id="email" class="field" placeholder="email@mail.com" name="email" required value="<?= $contact['email'] ?? '' ?>">
 
 					<label for="phone-number">Votre téléphone</label>
-					<input type="phone" id="phone" class="field" placeholder="Votre telephone" name="phone" required value="<?= $contact['phone'] ?? '' ?>">
+					<input type="phone" id="phone" class="field" placeholder="+00 0 00 00 00 00" name="phone" required value="<?= $contact['phone'] ?? '' ?>">
 
 					<label for="subject">Choisissez un sujet</label>
-					<select type="text" id="subject" class="field" placeholder="Sujet" name="subject" required>
+					<select type="text" id="subject" class="field" placeholder="Votre sujet" name="subject" required>
 						<?php foreach ($subjects as $subject => $subjectMessage) : ?>
 							<option value="<?= $subject ?>" <?php if (isset($contact['subject']) && $contact['subject'] === $subject) : ?> selected <?php endif; ?>>
 								<?= $subjectMessage ?>
@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					</select>
 
 					<label for="message">Votre message</label>
-					<textarea name="message" placeholder="Message" id="message" class="field" required><?= $contact['message'] ?? '' ?></textarea>
+					<textarea name="message" placeholder="Tapez votre message ici..." id="message" class="field" required><?= $contact['message'] ?? '' ?></textarea>
 
 
 					<button class="btn" value="submit">Envoyez</button>
@@ -137,13 +137,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 				<h3>Suivez-moi</h3>
 				<div class="linkedin">
-					<h4><a href="https://www.tintin.com/fr">LinkedIn/in/tintin</a></h4>
+					<h4><a href="https://www.tintin.com/fr" class="socialinks">LinkedIn/in/tintin</a></h4>
 				</div>
 				<div class="github">
-					<h4><a href="https://www.tintin.com/fr">Github.com/tintin</a></h4>
+					<h4><a href="https://www.tintin.com/fr" class="socialinks">Github.com/tintin</a></h4>
 				</div>
 				<div class="twitter">
-					<h4><a href="https://www.twitter.com/tintin">Twitter.com/tintin</a></h4>
+					<h4><a href="https://www.twitter.com/tintin" class="socialinks">Twitter.com/tintin</a></h4>
 				</div>
 
 			</div>
