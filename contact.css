@@ -23,7 +23,7 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
 	align-items: center;
-	padding-bottom: var(--spacing);
+	padding-bottom: var(--spaci);
 	background-color: #fff;
 	border: var(--border) solid var(--dark-color);
 	border-width: 4px;
