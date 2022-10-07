@@ -201,4 +201,31 @@ body {
 	.left {
 		height: 200px;
 	}
+
+	@keyframes move {
+		0%{transform:rotate(0deg);top:100%;left:0%}
+		5%{transform:rotate(0deg);top:100%;left:0%}
+		10%{transform:rotate(0deg);top:90%;left:0%}
+		15%{transform:rotate(0deg);top:85%;left:0%}
+		20%{transform:rotate(0deg);top:80%;left:0%}
+		25%{transform:rotate(0deg);top:75%;left:0%}
+		30%{transform:rotate(0deg);top:70%;left:0%}
+		35%{transform:rotate(0deg);top:65%;left:0%}
+		40%{transform:rotate(0deg);top:60%;left:0%}
+		45%{transform:rotate(0deg);top:55%;left:0%}
+		50%{transform:rotate(0deg);top:50%;left:0%}
+		55%{transform:rotate(0deg);top:45%;left:0%}
+		60%{transform:rotate(0deg);top:40%;left:0%}
+		65%{transform:rotate(0deg);top:35%;left:0%}
+		70%{transform:rotate(0deg);top:30%;left:0%}
+		75%{transform:rotate(60deg);top:25%;left:0%}
+		80%{transform:rotate(120deg);top:20%;left:0%}
+		85%{transform:rotate(180deg);top:0%;left:0%}	
+		86%{transform:rotate(240deg);top:0%;left:0%}	
+		87%{transform:rotate(300deg);top:0%;left:0%}	
+		88%{transform:rotate(360deg);top:0%;left:0%}	
+		89%{transform:rotate(0deg);top:0%;left:0%}	
+		90%{transform:rotate(0deg);top:-50%;left:0%}	
+		93%{transform:rotate(0deg);top:-80%;left:0%}
+		94%{transform:rotate(0deg);top:-100%;left:100%}	
 }
