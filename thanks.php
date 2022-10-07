@@ -68,8 +68,8 @@
 
 
 	<div class="ecran">
-	<img src="./img/fusee.png" alt="Fusée de Tintin" class="image">
-	<p class="image">POUR SYLVAIN</p>
+		<img src="./img/fusee.png" alt="Fusée de Tintin" class="image">
+		<p class="image">POUR SYLVAIN</p>
 	</div>
 </body>
 
