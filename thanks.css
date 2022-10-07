@@ -67,6 +67,7 @@ body {
 	flex-direction: column;
 	line-height: var(--spacing-x3);
 	padding: 10px;
+
 }
 
 .bottom-left h3 {
@@ -74,15 +75,19 @@ body {
 }
 
 .bottom-left h4 {
-	font-family: var(--arial-sans-serif);
 	font-weight: normal;
 	margin: 0;
+}
+
+h4 {
+	font-family: var(--font-family-talking);
 }
 
 .address {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+
 }
 
 .phone {
@@ -116,7 +121,7 @@ body {
 }
 
 .bottom-right h4 {
-	font-family: var(--font-family-sans-serif);
+	font-family: var(--font-family-talking);
 	font-weight: normal;
 	margin: 0;
 }
